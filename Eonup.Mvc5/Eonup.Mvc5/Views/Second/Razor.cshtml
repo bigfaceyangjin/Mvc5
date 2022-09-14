@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Razor";
+}
+
+<h2>Razor</h2>
+@{
+    int id = 1;
+    string name = "张三";
+    Console.WriteLine(id + name);
+}
+@*
+    行内(Inline)标记
+    单行标记
+*@
+<h3>@base.ViewBag.Title</h3>
+@base.ViewBag.Title @name
+
+@if (2 > 1)
+{
+    Console.WriteLine(true);
+    <P>成对标签P</P>
+    @:艾特冒号
+    <br />
+    <text>
+        int id = 1;
+        string name = "张三";
+        Console.WriteLine(id + name);
+    </text>
+}
+else
+{
+    Console.WriteLine(false);
+}
+@{
+    int m = 19;
+    Response.Write(m);
+}

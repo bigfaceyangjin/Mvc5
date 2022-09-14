@@ -133,13 +133,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\OA\OAAreaRegistration.cs" />
+    <Compile Include="Areas\Sys\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Sys\Controllers\UserController.cs" />
+    <Compile Include="Areas\Sys\SysAreaRegistration.cs" />
+    <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SecondController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CfgFiles\Log4.net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -150,6 +160,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Sys\Views\web.config" />
+    <Content Include="Areas\OA\Views\web.config" />
+    <Content Include="Areas\Sys\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Sys\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Sys\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Sys\Views\User\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -175,10 +191,23 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\First\Index.cshtml" />
+    <Content Include="Views\First\NoPara.cshtml" />
+    <Content Include="Views\First\Para.cshtml" />
+    <Content Include="Views\First\DataSmit.cshtml" />
+    <Content Include="Views\First\Temp.cshtml" />
+    <Content Include="Views\First\Data2.cshtml" />
+    <Content Include="Views\First\Data3.cshtml" />
+    <Content Include="Views\Second\Index.cshtml" />
+    <Content Include="Views\Second\Razor.cshtml" />
+    <Content Include="Views\Second\HtmlExtend.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\OA\Controllers\" />
+    <Folder Include="Areas\OA\Models\" />
+    <Folder Include="Areas\OA\Views\Shared\" />
+    <Folder Include="Areas\Sys\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -192,6 +221,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eonup.Framework\Eonup.Framework.csproj">
+      <Project>{f2f9cf50-61bb-4bde-87ca-e5a82540051d}</Project>
+      <Name>Eonup.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -211,7 +246,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63675</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63675/</IISUrl>
+          <IISUrl>http://localhost:6099/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+    CurrentUser cusUser = (CurrentUser)TempData["CusUser"];
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NoPara</title>
+</head>
+<body>
+    <div> 
+        NoPara
+    </div>
+    <div>
+        <h3>ViewBag.FName:@ViewBag.FName</h3>
+        <h3>ViewBag.EName:@ViewBag.EName</h3>
+        <h3>TempData["bigzhan"]:@TempData["bigzhan"]</h3>
+        <h3>TempData["CusUser"]的Account:@cusUser.Account</h3>
+        <h3>TempData["CusUser"]的LoginTime:@cusUser.LoginTime</h3>
+    </div>
+</body>
+</html>

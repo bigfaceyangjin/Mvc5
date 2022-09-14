@@ -10,6 +10,7 @@ namespace Eonup.Mvc5.Controllers
 	{
 		public ActionResult Index()
 		{
+			ViewBag.Title = "Index Test";
 			return View();
 		}
 

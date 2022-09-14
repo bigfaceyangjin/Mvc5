@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eonup.Mvc5", "Eonup.Mvc5\Eo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{E0659DA1-8999-400B-A4D1-9E4A972592AF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{AB6A26D1-88FD-4796-861F-3FA4E07D86E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eonup.Framework", "Eonup.Framework\Eonup.Framework.csproj", "{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{CCECF2CA-6A5E-4E1C-880C-CBCB7C645E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCECF2CA-6A5E-4E1C-880C-CBCB7C645E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCECF2CA-6A5E-4E1C-880C-CBCB7C645E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CCECF2CA-6A5E-4E1C-880C-CBCB7C645E7B} = {E0659DA1-8999-400B-A4D1-9E4A972592AF}
+		{F2F9CF50-61BB-4BDE-87CA-E5A82540051D} = {AB6A26D1-88FD-4796-861F-3FA4E07D86E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A49312C2-E71A-435C-AC05-425759BFC03C}

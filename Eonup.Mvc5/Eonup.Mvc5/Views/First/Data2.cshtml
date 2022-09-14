@@ -1,0 +1,18 @@
+﻿@*@using Eonup.Mvc5.Models;*@
+@{
+    ViewBag.Title = "DataSmit";
+    CurrentUser cusUser = (CurrentUser)TempData["CusUser"];
+}
+
+<h2>Data2</h2>
+<h3>ViewData["k1"]:@ViewData["k1"]</h3>
+<h3>ViewData["k2"]:@ViewData["k2"]</h3>
+<h3>ViewData["k3"]:@ViewData["k3"]</h3>
+<h3>ViewBag.CusUser.Name:@ViewBag.CusUser.Name</h3>
+<h3>ViewBag.CusUser.Account:@ViewBag.CusUser.Account</h3>
+<h3>ViewBag.CusUser.LoginTime:@ViewBag.CusUser.LoginTime</h3>
+<h3>ViewBag.FName:@ViewBag.FName</h3>
+<h3>ViewBag.EName:@ViewBag.EName</h3>
+<h3>TempData["bigzhan"]:@TempData["bigzhan"]</h3>
+<h3>TempData["CusUser"]的Account:@cusUser.Account</h3>
+<h3>TempData["CusUser"]的LoginTime:@cusUser.LoginTime</h3>
