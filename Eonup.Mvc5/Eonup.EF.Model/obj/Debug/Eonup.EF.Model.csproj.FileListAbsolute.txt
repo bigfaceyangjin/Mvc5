@@ -1,0 +1,14 @@
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.dll.config
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.xml
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csproj.CopyComplete
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csprojAssemblyReference.cache

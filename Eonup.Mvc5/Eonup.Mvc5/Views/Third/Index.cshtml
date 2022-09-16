@@ -1,0 +1,27 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<h2>Index</h2>
+<div>
+	<p>Html.RenderPartial 在指定位置添加一个视图，并且带上model实体参数 返回void</p>
+	@{Html.RenderPartial("Partial", new { id = 1, name = "张三" });}
+	<p>Html.Partial 在指定位置添加</p>
+	@Html.Partial("Partial", "Html.Partial")
+	@*<p>Html.Action 返回的是字符串 需要经过action处理</p>
+	@Html.Action("DataSmit", "First", new { id = 10, name = "李四" });
+	@{Html.RenderAction("DataSmit", "First", new { id = 10, name = "李四" });}*@
+</div>
+@section scripts{
+	<script>
+		var s = $("#id").val();
+		alert(s);
+	</script>
+	}
+@section scripts1{
+	<script>
+		alert(123);
+	</script>
+	}

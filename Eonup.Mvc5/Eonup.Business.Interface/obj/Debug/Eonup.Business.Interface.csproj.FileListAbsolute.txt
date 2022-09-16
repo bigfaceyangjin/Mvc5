@@ -1,0 +1,15 @@
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\obj\Debug\Eonup.Business.Interface.csprojAssemblyReference.cache
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\obj\Debug\Eonup.Business.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.Business.Interface.dll.config
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.Business.Interface.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.Business.Interface.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\EntityFramework.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.EF.Model.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.EF.Model.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\Eonup.EF.Model.dll.config
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\EntityFramework.xml
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\obj\Debug\Eonup.Business.Interface.csproj.CopyComplete
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\obj\Debug\Eonup.Business.Interface.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Business.Interface\obj\Debug\Eonup.Business.Interface.pdb
