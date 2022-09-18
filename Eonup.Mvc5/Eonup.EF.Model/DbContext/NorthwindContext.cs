@@ -1,4 +1,5 @@
-namespace Eonup.EF.Model.Model
+using Eonup.EF.Model.Model;
+namespace Eonup.EF.Model
 {
 	using System;
 	using System.Data.Entity;

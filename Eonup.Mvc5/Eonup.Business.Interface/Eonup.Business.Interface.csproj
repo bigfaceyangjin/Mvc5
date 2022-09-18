@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="IBaseService.cs" />
     <Compile Include="ICategoriesService.cs" />
+    <Compile Include="ICompanyService.cs" />
     <Compile Include="ICustomersService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

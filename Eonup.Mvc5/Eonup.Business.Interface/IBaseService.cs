@@ -14,7 +14,7 @@ namespace Eonup.Business.Interface
 		/// <typeparam name="T"></typeparam>
 		/// <param name="Id"></param>
 		/// <returns></returns>
-		T Find<T>(string Id) where T : class;
+		T Find<T>(int Id) where T : class;
 		/// <summary>
 		/// 单表查询
 		/// </summary>

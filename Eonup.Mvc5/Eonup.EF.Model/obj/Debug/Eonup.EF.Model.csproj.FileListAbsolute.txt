@@ -12,3 +12,16 @@ C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonu
 C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.dll
 C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.pdb
 C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csprojAssemblyReference.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.dll.config
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\Eonup.EF.Model.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.xml
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csproj.CoreCompileInputs.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.csproj.CopyComplete
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.EF.Model\obj\Debug\Eonup.EF.Model.pdb

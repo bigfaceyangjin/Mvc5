@@ -50,7 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Bus_Bank.cs" />
+    <Compile Include="Model\Bus_follow.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Company.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\CustomerDemographic.cs" />
     <Compile Include="Model\dtproperty.cs" />
@@ -63,8 +66,11 @@
     <Compile Include="Model\Shipper.cs" />
     <Compile Include="Model\Supplier.cs" />
     <Compile Include="Model\sysdiagram.cs" />
+    <Compile Include="Model\temp_tab1.cs" />
     <Compile Include="Model\Territory.cs" />
     <Compile Include="Model\T_User.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="DbContext\ZhanProDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

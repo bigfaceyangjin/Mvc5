@@ -24,7 +24,7 @@ namespace Eonup.Business.Service
 			this._context = context;
 		}
 		#endregion
-		public T Find<T>(string Id) where T : class
+		public T Find<T>(int Id) where T : class
 		{
 			return this._context.Set<T>().Find(Id);
 		}

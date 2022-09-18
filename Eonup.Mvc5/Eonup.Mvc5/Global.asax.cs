@@ -1,4 +1,5 @@
 ﻿using Eonup.Framework.Log4;
+using Eonup.Mvc5.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,8 @@ namespace Eonup.Mvc5
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);//注册Filter
             RouteConfig.RegisterRoutes(RouteTable.Routes);//注册路由
             BundleConfig.RegisterBundles(BundleTable.Bundles);//捆绑css js
+
+			ControllerBuilder.Current.SetControllerFactory(new BigZhanControllerFactory());//创建自定义的控制器实例
         }
     }
 }

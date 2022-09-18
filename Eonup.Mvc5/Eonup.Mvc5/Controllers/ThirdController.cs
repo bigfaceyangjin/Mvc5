@@ -9,11 +9,25 @@ using System.Xml.Serialization;
 using Eonup.EF.Model.Model;
 using Eonup.Business.Interface;
 using Eonup.Business.Service;
+using Eonup.Framework.Unity;
+using Unity;
+using Eonup.EF.Model;
+using System.Web.Routing;
+using Eonup.Mvc5.Models;
 
 namespace Eonup.Mvc5.Controllers
 {
 	public class ThirdController : Controller
 	{
+		#region Identity
+		private ICompanyService _companyService = null;
+		private ICustomersService _customersService = null;
+		public ThirdController(ICompanyService companyService,ICustomersService customersService)
+		{
+			this._companyService = companyService;
+			this._customersService = customersService;
+		}
+		#endregion
 		// GET: Third
 		public ActionResult Index()
 		{
@@ -56,41 +70,76 @@ namespace Eonup.Mvc5.Controllers
 		}
 		public XmlResult Xml1()
 		{
-			return new XmlResult(new {
-				Id=1,
-				Name="朱展"
+			return new XmlResult(new XmlUser(){
+				id=1,
+				name="朱展"
 			});
 		}
 
 		#region EF + DbContext、抽象、Unity容器、自动注入
 		public ActionResult EFDb1()
 		{
-			using (NorthwindContext context = new NorthwindContext())
+			//using (NorthwindContext context = new NorthwindContext())
+			//{
+			//	Customer customer = context.Customers.FirstOrDefault(c => c.CustomerID == "ALFKI");
+			//	return View(customer);
+			//}
+			using (ZhanProDbContext context = new ZhanProDbContext())
 			{
-				Customer customer = context.Customers.FirstOrDefault(c => c.CustomerID == "ALFKI");
-				return View(customer);
+				Company company= context.Company.FirstOrDefault(c=>c.Id==6);
+				return View(company);
 			}
 
 		}
 		public ActionResult EFDb2()
 		{
-			using (ICustomersService service = new CustomersService(new NorthwindContext()))
+			//using (ICustomersService service = new CustomersService(new NorthwindContext()))
+			//{
+			//	Customer cus1 = service.Find<Customer>("ANTON");
+			//	List<Customer> customerS = service.Set<Customer>().ToList<Customer>();
+			//	return View(customerS);
+			//}
+			using (ICompanyService service = new CompanyService(new ZhanProDbContext()))
 			{
-				Customer cus1 = service.Find<Customer>("ANTON");
-				List<Customer> customerS = service.Set<Customer>().ToList<Customer>();
-				return View(customerS);
+				List<Bus_Bank> list= service.Set<Bus_Bank>().ToList();
+				return View(list);
 			}
 		}
-		//public ActionResult EFDb3()
-		//{
-
-		//}
+		public ActionResult EFDb3()
+		{
+			using (ICompanyService service = ContainerFactory.CreateContainer().Resolve<ICompanyService>())
+			{
+				List<Company> list= service.Set<Company>().ToList();
+				return View("EFDb2", list);
+			}
+		}
+		public ActionResult EFDb4()
+		{
+			try
+			{
+				Company company = this._companyService.Find<Company>(1);
+				return View(company);
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
+		}
 		#endregion
 
 	}
+	public class BigZhanControllerFactory : DefaultControllerFactory
+	{
+		protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
+		{
+			return (IController)ContainerFactory.CreateContainer().Resolve(controllerType);
+		}
+	}
+	/// <summary>
+	/// 返回XML格式数据给前端
+	/// </summary>
 	public class XmlResult : ActionResult
 	{
-		public XmlResult() { }
 		private object _data = null;
 		public XmlResult(object data)
 		{
