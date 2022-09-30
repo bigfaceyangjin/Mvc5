@@ -1,0 +1,12 @@
+2022-09-27 15:01:56,491 [122] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:01:56,526 [122] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-09-27 15:33:24,372 [122] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:33:24,391 [122] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-09-27 15:36:43,213 [50] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:36:43,232 [50] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-09-27 15:48:24,154 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:48:24,174 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-09-27 15:50:05,251 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:50:05,267 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-09-27 15:58:21,134 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-09-27 15:58:21,364 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动

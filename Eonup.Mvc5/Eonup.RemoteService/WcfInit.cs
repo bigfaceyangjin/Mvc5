@@ -10,20 +10,27 @@ namespace Eonup.RemoteService
 {
 	public class WcfInit
 	{
+		private static List<ServiceHost> list = null;
 		public static void OpenService()
 		{
-			List<ServiceHost> list = new List<ServiceHost>();
+			list = new List<ServiceHost>();
 			list.Add(new ServiceHost(typeof(SearchService)));
 			foreach (ServiceHost host in list)
 			{
-				host.Opened += (s, e) => {  };
+				host.Opened += (s, e) => { Console.WriteLine($"服务以及打开 {host.Description}"); };
 				host.Open();
 			}
 		}
 
-		private static void Host_Opened(object sender, EventArgs e)
+		public static void CloseService()
 		{
-			throw new NotImplementedException();
+			foreach (ServiceHost host in list)
+			{
+				host.Closed += (o, e) => { Console.WriteLine($"{host.Description}已经关闭"); };
+				host.Close();
+				host.Abort();
+			}
 		}
+		
 	}
 }

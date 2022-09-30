@@ -20,13 +20,11 @@ namespace Eonup.Mvc5.Controllers
 	public class ThirdController : Controller
 	{
 		#region Identity
-		private ICompanyService _companyService = null;
-		private ICustomersService _customersService = null;
-		public ThirdController(ICompanyService companyService,ICustomersService customersService)
-		{
-			this._companyService = companyService;
-			this._customersService = customersService;
-		}
+		//private ICustomersService _customersService = null;
+		//public ThirdController(ICustomersService customersService)
+		//{
+		//	this._customersService = customersService;
+		//}
 		#endregion
 		// GET: Third
 		public ActionResult Index()
@@ -91,33 +89,33 @@ namespace Eonup.Mvc5.Controllers
 			}
 
 		}
-		public ActionResult EFDb2()
-		{
-			//using (ICustomersService service = new CustomersService(new NorthwindContext()))
-			//{
-			//	Customer cus1 = service.Find<Customer>("ANTON");
-			//	List<Customer> customerS = service.Set<Customer>().ToList<Customer>();
-			//	return View(customerS);
-			//}
-			using (ICompanyService service = new CompanyService(new ZhanProDbContext()))
-			{
-				List<Bus_Bank> list= service.Set<Bus_Bank>().ToList();
-				return View(list);
-			}
-		}
-		public ActionResult EFDb3()
-		{
-			using (ICompanyService service = ContainerFactory.CreateContainer().Resolve<ICompanyService>())
-			{
-				List<Company> list= service.Set<Company>().ToList();
-				return View("EFDb2", list);
-			}
-		}
+		//public ActionResult EFDb2()
+		//{
+		//	//using (ICustomersService service = new CustomersService(new NorthwindContext()))
+		//	//{
+		//	//	Customer cus1 = service.Find<Customer>("ANTON");
+		//	//	List<Customer> customerS = service.Set<Customer>().ToList<Customer>();
+		//	//	return View(customerS);
+		//	//}
+		//	using (ICompanyService service = new CompanyService(new ZhanProDbContext()))
+		//	{
+		//		List<Bus_Bank> list= service.Set<Bus_Bank>().ToList();
+		//		return View(list);
+		//	}
+		//}
+		//public ActionResult EFDb3()
+		//{
+		//	using (ICompanyService service = ContainerFactory.CreateContainer().Resolve<ICompanyService>())
+		//	{
+		//		List<Company> list= service.Set<Company>().ToList();
+		//		return View("EFDb2", list);
+		//	}
+		//}
 		public ActionResult EFDb4()
 		{
 			try
 			{
-				Company company = this._companyService.Find<Company>(1);
+				Company company = null;// this._companyService.Find<Company>(1);
 				return View(company);
 			}
 			catch (Exception ex)

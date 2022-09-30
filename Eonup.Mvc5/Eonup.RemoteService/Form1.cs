@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,9 +28,9 @@ namespace Eonup.RemoteService
 			}
 			catch (Exception ex)
 			{
-				this.btn_close.Enabled = true;
-				this.btn_open.Enabled = false;
-				Console.WriteLine($"{DateTime.Now}");
+				this.btn_close.Enabled = false;
+				this.btn_open.Enabled = true;
+				Console.WriteLine($"{DateTime.Now}，线程Id：{Thread.CurrentThread.ManagedThreadId} Msg:{ex.Message}");
 			}
 		}
 
@@ -41,8 +42,17 @@ namespace Eonup.RemoteService
 
 		private void btn_close_Click(object sender, EventArgs e)
 		{
-			this.btn_close.Enabled = false;
-			this.btn_open.Enabled = true;
+			try
+			{
+				this.btn_open.Enabled = true;
+				this.btn_close.Enabled = false;
+			}
+			catch (Exception ex)
+			{
+				this.btn_open.Enabled = false;
+				this.btn_close.Enabled = true;
+				Console.WriteLine($"{DateTime.Now}，线程Id：{Thread.CurrentThread.ManagedThreadId} Msg:{ex.Message}");
+			}
 		}
 	}
 }

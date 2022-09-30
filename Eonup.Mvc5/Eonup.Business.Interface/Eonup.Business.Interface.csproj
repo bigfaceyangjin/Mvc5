@@ -53,9 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBaseService.cs" />
-    <Compile Include="ICategoriesService.cs" />
-    <Compile Include="ICompanyService.cs" />
-    <Compile Include="ICustomersService.cs" />
+    <Compile Include="ICommodityService.cs" />
+    <Compile Include="IProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +65,10 @@
     <ProjectReference Include="..\Eonup.EF.Model\Eonup.EF.Model.csproj">
       <Project>{262562ca-634f-47e6-8333-a7ba0f3cbae7}</Project>
       <Name>Eonup.EF.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Framework\Eonup.Framework.csproj">
+      <Project>{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}</Project>
+      <Name>Eonup.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

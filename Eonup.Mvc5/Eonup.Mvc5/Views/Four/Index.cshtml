@@ -1,0 +1,68 @@
+﻿@model PagedList.StaticPagedList<Commodity>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "商品信息列表";
+}
+
+<p style="padding-top:10px;">
+    @Html.Button("添加商品", "btn btn-default btn_add")
+    @*@Html.ActionLink("添加商品","Create")*@
+    @*<a href="/Four/Create">添加商品</a>*@
+</p>
+@using (Html.BeginForm())
+{
+    @*搜索栏：*@
+    <p>
+        @Html.TextBox("search", ViewBag.SearchString as string,new { @class="form-control",@style="display:inline;"})
+        @Html.Submit("查询")
+    </p>
+    <div id="dataList">
+        <table class="table">
+            <tr>
+                <th>商品ID</th>
+                <th>标题</th>
+                <th>@Html.ActionLink("价格","index",new { search=ViewBag.SearchString ,orderby=ViewBag.orderby })</th>
+                <th>Url</th>
+                <th>操作</th>
+                <th>图片</th>
+            </tr>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(models => c.Id)</td>
+                    <td>@Html.DisplayFor(models => c.Title)</td>
+                    <td>@Html.DisplayFor(models => c.Price)</td>
+                    <td>@Html.DisplayFor(models => c.Url)</td>
+                    <td>
+                        <a href="/Fifth/Details/@c.Id">详情</a>
+                        @Html.ActionLink("修改", "Edit","fifth",new { @Id=c.Id},null)
+                        @Html.ActionLink("删除", "Delete","fifth", new { @Id = c.Id },null)
+                        <a id="@c.Id" href="javascript:void(0);" onclick="ajaxDelete(this)">AjaxDelete</a>
+                    </td>
+                    @*<td>@Html.DisplayFor(models => c.ImageUrl)</td>*@
+                </tr>
+            }
+        </table>
+        Page @Model.PageNumber of @Model.PageCount
+        @Html.PagedListPager(Model, pageIndex => Url.Action("Index",new { pageIndex=pageIndex, search=ViewBag.SearchString }))
+    </div>
+}
+@section scripts{
+    <script>
+        $(function () {
+            $(".btn_add").click(function () {
+                window.location.href = "/four/Create";
+            });
+        })
+        function ajaxDelete(obj) {
+            $.ajax({
+                url: "/Fifth/AjaxDelete",
+                data: { Id: obj.id },
+                dataType: "json",
+                type: "post",
+                success: function (data) { alert(data.msg); location.href = "/Four/Index"; },
+                error: function (data) { alert("删除失败"); }
+            });
+        }
+    </script>
+    }

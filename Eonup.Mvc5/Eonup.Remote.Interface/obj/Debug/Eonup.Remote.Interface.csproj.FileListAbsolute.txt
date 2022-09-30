@@ -1,0 +1,12 @@
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csprojAssemblyReference.cache
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.dll
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.pdb
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csproj.CoreCompileInputs.cache
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.dll
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.pdb
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csprojAssemblyReference.cache

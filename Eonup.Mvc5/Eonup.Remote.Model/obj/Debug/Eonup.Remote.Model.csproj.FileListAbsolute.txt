@@ -1,0 +1,10 @@
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\bin\Debug\Eonup.Remote.Model.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\bin\Debug\Eonup.Remote.Model.pdb
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.dll
+C:\Users\Administrator.QH-20170626QSXJ\Desktop\workspace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.pdb
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\bin\Debug\Eonup.Remote.Model.dll
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\bin\Debug\Eonup.Remote.Model.pdb
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.csproj.CoreCompileInputs.cache
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.dll
+E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Model\obj\Debug\Eonup.Remote.Model.pdb

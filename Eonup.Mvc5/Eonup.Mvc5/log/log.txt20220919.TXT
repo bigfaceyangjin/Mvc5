@@ -1,0 +1,3 @@
+2022-09-19 21:41:11,026 [8] INFO  Eonup.Framework.AOP.LogBeforeBehavior - LogBeforeBehavior_LogBeforeBehavior
+2022-09-19 21:41:11,027 [8] INFO  Eonup.Remote.Service.SearchService - SearchService
+2022-09-19 21:41:11,088 [8] INFO  Eonup.Framework.AOP.LogBeforeBehavior - LogAfterBehavior_LogAfterBehavior

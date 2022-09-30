@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+@model PagedList.IPagedList<Eonup.EF.Model.Commodity>
+<link href="~/Content/PagedList.css" rel="stylesheet"/>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>类别Id</th>
+        <th>标题</th>
+        <th>@Html.ActionLink("价格","SearchPartialList",new { searchString=ViewBag.Search,orderby=ViewBag.Orderby,pageIndex=-1})</th>
+        <th>URL</th>
+        <th>操作</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(x => item.Id)</td>
+        <td>@Html.DisplayFor(x => item.CategoryId)</td>
+        <td>@Html.DisplayFor(x => item.Title)</td>
+        <td>@Html.DisplayFor(x => item.Price)</td>
+        <td>@Html.DisplayFor(x => item.Url)</td>
+        <td>
+            <a href="/Fifth/Detail/@item.Id">详情</a>
+            @Html.ActionLink("修改", "Edit", new { id=item.Id})
+            @Html.ActionLink("删除", "Delete", new { id=item.Id})
+            <a id="@item.Id" href="javascript:void(0);" onclick="ajaxDelete(this)">ajaxDelete</a>
+        </td>
+    </tr>
+    }
+</table>

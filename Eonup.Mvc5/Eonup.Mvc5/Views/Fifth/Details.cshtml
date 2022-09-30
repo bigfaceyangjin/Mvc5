@@ -1,0 +1,53 @@
+﻿@model Eonup.EF.Model.Commodity
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>商品详情页</h3>
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(c => c.Id)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.Id)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(c => c.CategoryId)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.CategoryId)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(c => c.Title)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.Title)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(c => c.Price)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.Price)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(c => c.Url)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.Url)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(c => c.ImageUrl)
+    </dt>
+    <dd>
+        @Html.DisplayFor(c => c.ImageUrl)
+    </dd>
+</dl>
+<p>
+    @Html.ActionLink("返回","index","four")
+    @Html.ActionLink("修改", "Edit",new { @Id=Model.Id})
+</p>

@@ -53,6 +53,12 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -118,14 +124,20 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Abstractions, Version=5.11.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Abstractions.5.11.2\lib\net46\Unity.Abstractions.dll</HintPath>
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Abstractions.5.11.7\lib\net46\Unity.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Container.5.11.1\lib\net46\Unity.Container.dll</HintPath>
+    <Reference Include="Unity.Configuration, Version=5.11.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Configuration.5.11.2\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.11.11\lib\net46\Unity.Container.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Interception, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.Interception.5.11.1\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.Configuration.5.11.1\lib\net46\Unity.Interception.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -162,7 +174,9 @@
     <Compile Include="Areas\Sys\Controllers\HomeController.cs" />
     <Compile Include="Areas\Sys\Controllers\UserController.cs" />
     <Compile Include="Areas\Sys\SysAreaRegistration.cs" />
+    <Compile Include="Controllers\FifthController.cs" />
     <Compile Include="Controllers\FirstController.cs" />
+    <Compile Include="Controllers\FourController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecondController.cs" />
     <Compile Include="Controllers\ThirdController.cs" />
@@ -181,6 +195,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -236,6 +251,12 @@
     <Content Include="Views\Third\EFDb1.cshtml" />
     <Content Include="Views\Third\EFDb2.cshtml" />
     <Content Include="Views\Third\EFDb3.cshtml" />
+    <Content Include="Views\Four\Index.cshtml" />
+    <Content Include="Views\Four\Create.cshtml" />
+    <Content Include="Views\Fifth\Details.cshtml" />
+    <Content Include="Views\Fifth\Edit.cshtml" />
+    <Content Include="Views\Fifth\Index.cshtml" />
+    <Content Include="Views\Fifth\SearchPartialList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -273,6 +294,18 @@
     <ProjectReference Include="..\Eonup.Framework\Eonup.Framework.csproj">
       <Project>{f2f9cf50-61bb-4bde-87ca-e5a82540051d}</Project>
       <Name>Eonup.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Remote.Interface\Eonup.Remote.Interface.csproj">
+      <Project>{57cb8820-59a8-42af-b8de-c457e19ecf8c}</Project>
+      <Name>Eonup.Remote.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Remote.Model\Eonup.Remote.Model.csproj">
+      <Project>{ee8e9c80-d6f5-4a4b-b96e-d5ee9b2c22fa}</Project>
+      <Name>Eonup.Remote.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Remote.Service\Eonup.Remote.Service.csproj">
+      <Project>{ea8ae2a2-c528-4742-b286-0f47db2d325c}</Project>
+      <Name>Eonup.Remote.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

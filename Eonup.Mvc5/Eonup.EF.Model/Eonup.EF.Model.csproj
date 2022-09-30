@@ -50,10 +50,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Commodity.cs" />
+    <Compile Include="JD_Commodity_002.cs" />
+    <Compile Include="JD_Commodity_003.cs" />
+    <Compile Include="JD_Commodity_004.cs" />
+    <Compile Include="JD_Commodity_005.cs" />
+    <Compile Include="JD_Commodity_006.cs" />
+    <Compile Include="JD_Commodity_007.cs" />
+    <Compile Include="JD_Commodity_008.cs" />
+    <Compile Include="JD_Commodity_009.cs" />
+    <Compile Include="JD_Commodity_010.cs" />
+    <Compile Include="JD_Commodity_011.cs" />
+    <Compile Include="JD_Commodity_012.cs" />
+    <Compile Include="JD_Commodity_013.cs" />
+    <Compile Include="JD_Commodity_014.cs" />
+    <Compile Include="JD_Commodity_015.cs" />
+    <Compile Include="JD_Commodity_016.cs" />
+    <Compile Include="JD_Commodity_017.cs" />
+    <Compile Include="JD_Commodity_018.cs" />
+    <Compile Include="JD_Commodity_019.cs" />
+    <Compile Include="JD_Commodity_020.cs" />
+    <Compile Include="JD_Commodity_021.cs" />
+    <Compile Include="JD_Commodity_022.cs" />
+    <Compile Include="JD_Commodity_023.cs" />
+    <Compile Include="JD_Commodity_024.cs" />
+    <Compile Include="JD_Commodity_025.cs" />
+    <Compile Include="JD_Commodity_026.cs" />
+    <Compile Include="JD_Commodity_027.cs" />
+    <Compile Include="JD_Commodity_028.cs" />
+    <Compile Include="JD_Commodity_029.cs" />
+    <Compile Include="JD_Commodity_030.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="AdvanceContext.cs" />
     <Compile Include="Model\Bus_Bank.cs" />
     <Compile Include="Model\Bus_follow.cs" />
-    <Compile Include="Model\Category.cs" />
-    <Compile Include="Model\Company.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\CustomerDemographic.cs" />
     <Compile Include="Model\dtproperty.cs" />
@@ -72,6 +104,8 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="DbContext\ZhanProDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserMenuMapping.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

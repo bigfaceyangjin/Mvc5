@@ -44,6 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,9 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseService.cs" />
-    <Compile Include="CategoriesService.cs" />
-    <Compile Include="CompanyService.cs" />
-    <Compile Include="CustomersService.cs" />
+    <Compile Include="CommodityService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +66,14 @@
     <ProjectReference Include="..\Eonup.EF.Model\Eonup.EF.Model.csproj">
       <Project>{262562ca-634f-47e6-8333-a7ba0f3cbae7}</Project>
       <Name>Eonup.EF.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Framework\Eonup.Framework.csproj">
+      <Project>{F2F9CF50-61BB-4BDE-87CA-E5A82540051D}</Project>
+      <Name>Eonup.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eonup.Remote.Model\Eonup.Remote.Model.csproj">
+      <Project>{EE8E9C80-D6F5-4A4B-B96E-D5EE9B2C22FA}</Project>
+      <Name>Eonup.Remote.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
