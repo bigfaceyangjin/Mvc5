@@ -14,6 +14,7 @@ using Unity;
 using Eonup.EF.Model;
 using System.Web.Routing;
 using Eonup.Mvc5.Models;
+using Eonup.Mvc5.Filter;
 
 namespace Eonup.Mvc5.Controllers
 {
@@ -27,6 +28,7 @@ namespace Eonup.Mvc5.Controllers
 		//}
 		#endregion
 		// GET: Third
+		[CusAuthorize]
 		public ActionResult Index()
 		{
 			return View();

@@ -1,14 +1,16 @@
-﻿@{
+﻿@using PagedList.Mvc
+@{
     Layout = null;
 }
 @model PagedList.IPagedList<Eonup.EF.Model.Commodity>
+
 <link href="~/Content/PagedList.css" rel="stylesheet"/>
 <table class="table">
     <tr>
         <th>Id</th>
         <th>类别Id</th>
         <th>标题</th>
-        <th>@Html.ActionLink("价格","SearchPartialList",new { searchString=ViewBag.Search,orderby=ViewBag.Orderby,pageIndex=-1})</th>
+        <th style="width:50px;">价格</th>
         <th>URL</th>
         <th>操作</th>
     </tr>
@@ -29,3 +31,5 @@
     </tr>
     }
 </table>
+Page @Model.PageNumber of @Model.PageCount
+@Html.PagedListPager(Model, pageindex =>  Url.Action("Index",new { searchString =ViewBag.SearchString , pageIndex=pageindex}))

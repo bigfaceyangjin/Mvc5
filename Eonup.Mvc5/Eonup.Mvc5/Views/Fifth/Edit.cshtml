@@ -1,7 +1,7 @@
 ﻿@model Eonup.EF.Model.Commodity
 @{
     ViewBag.Title = "Edit";
-    List<SelectListItem> cates = ViewBag.CategoryList as List<SelectListItem>;
+    IEnumerable<SelectListItem> cates = ViewBag.CategoryList as IEnumerable<SelectListItem>;
 }
 
 <h2>@ViewBag.Title</h2>

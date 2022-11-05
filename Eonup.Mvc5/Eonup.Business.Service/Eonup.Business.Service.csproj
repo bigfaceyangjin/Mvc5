@@ -57,6 +57,7 @@
     <Compile Include="CommodityService.cs" />
     <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eonup.Business.Interface\Eonup.Business.Interface.csproj">

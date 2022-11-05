@@ -1,6 +1,6 @@
 ﻿@model Eonup.EF.Model.Category
 @{
-    ViewBag.Title = "搜索页";
+    ViewBag.Title = "Search Page";
     IEnumerable<SelectListItem> categories1 = ViewBag.FirstList as IEnumerable<SelectListItem>;
     IEnumerable<SelectListItem> categories2 = ViewBag.SecondList as IEnumerable<SelectListItem>;
     IEnumerable<SelectListItem> categories3 = ViewBag.ThirdList as IEnumerable<SelectListItem>;
@@ -13,18 +13,18 @@
 {
     <p>
         @Html.Label("Title", "Find by Title:")
-        @Html.TextBox("search", ViewBag.Searching as string, new { @class = "form-  control", @style = "display:inline;" })
+        @Html.TextBox("search", ViewBag.Searching as string, new { @class = "form-control", @style = "display:inline;" })
         @Html.DropDownList("firstDrop", categories1)
         @Html.DropDownList("secondDrop", categories2)
         @Html.DropDownList("thirdDrop", categories3)
-        @Html.Button("查询")
+        @Html.Button("查询","btnSearch")
     </p>
     <div id="searchPartialList">
-        @Html.Action("SearchPartialList",new { searchString= "男装",pageIndex=1,orderby=-1 })
+        @Html.Action("searchPartialList",new { searchString= "男装",pageIndex=1,orderby=-1 })
     </div>
 }
 @section scripts{
-    <script>
+    <script type="text/javascript">
         $(function () {
             var UnSelect = "<option value='-1'>--请选择--</option>";
             $("#firstDrop").on("change", function () {
@@ -59,30 +59,51 @@
 
                 }
             })
-            $("#secondDrop").on("change", function () {
-                if ($(this).val() == -1) {
-                    $("#thirdDrop option").remove();
-                    $("#thirdDrop").append(UnSelect);
-                }
-                else {
-                    $.ajax({
-                        url: "/Fifth/CategoryDropBind",
-                        data: { id: $(this).val() },
-                        dataType: "json",
-                        type: "post",
-                        success: function (data) {
-                            $("#thirdDrop option").remove();
-                            $("#thirdDrop").append(UnSelect);
-                            var rs = data.data;
-                            for (var i = 0; i < rs.length; i++) {
-                                $("#thirdDrop").append("<option value='" + rs[i].Value + "'>" + rs[i].Text + "</option>");
-                            }
-                        },
-                        error: function (data) { alert("请求失败，请联系管理员！"); }
-                    });
-                }
-            })
+            $("#secondDrop").on                                                         
+            $("#btnSearch").click(function () {
+                $.ajax({
+                    url: '@Url.Action("SearchPartialList")',
+                    type: 'Post',
+                    data: { searchString: $("#search").val(), firstDrop: $("#firstDrop").val(), secondDrop: $("#secondDrop").val(), thirdDrop: $("#thirdDrop").val() },
+                    success: function (data) {
+                        $("#searchPartialList").html(data);
+                        bindPageClick();
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert(errorThrown);
+                    }
+                });
+            });
 
-        })
+            function bindPageClick() {
+                $('.pagination li a').each(function (index) {
+                    var href = $(this).attr('href');
+                    var pageIndex = 1;
+                    if (href) {
+                        $(this).attr("href", "javascript:void(0)");
+                        pageIndex = href.split('=')[2];
+                    }
+                    console.log(href + '    ' + pageIndex);
+                    $(this).click(function () {
+                        var spot = $(this).text();
+                        if (spot == '…') {
+                            return;
+                        }
+                        $.ajax({
+                            url: '/fifth/SearchPartialList',
+                            type: 'Post',
+                            data: { searchString: $("#search").val(), firstDrop: $("#firstDrop").val(), secondDrop: $("#secondDrop").val(), thirdDrop: $("#thirdDrop").val(), pageIndex: pageIndex },
+                            success: function (data) {
+                                $("#searchPartialList").html(data);
+                                bindPageClick();
+                            },
+                            error: function (r, s, e) { alert('error'); }
+                        });
+                    });
+                });
+            }
+            bindPageClick();
+        });
+        
     </script>
     }

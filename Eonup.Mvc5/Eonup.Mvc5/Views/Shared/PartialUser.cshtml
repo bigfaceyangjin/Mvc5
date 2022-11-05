@@ -1,0 +1,30 @@
+﻿@using Eonup.Mvc5.Models;
+@if (Context.Request.Cookies["curUser"] != null && Context.Session["CurrentUser"] is CurrentUser)
+{
+    using (Html.BeginForm("LogOut", "Six", FormMethod.Post, new { }))
+    {
+        <ul class="nav navbar-nav navbar-right">
+            <li>@Html.ActionLink("你好 " + ((CurrentUser)Context.Session["CurrentUser"]).Name +"!", "Index", "Fifth", new { })</li>
+            <li>@Html.ActionLink("注销","LogOut","Six")</li>
+        </ul>
+    }
+}
+else
+{
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("登录", "Login", "Six", null, new { id = "loginLink" })
+            </li>
+        </ul>
+}
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            alert();
+            $("#Cancel").click(function () {
+                alert();
+            });
+        })
+    </script>
+}

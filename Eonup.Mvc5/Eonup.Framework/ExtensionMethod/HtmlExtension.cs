@@ -25,10 +25,11 @@ namespace Eonup.Framework.ExtensionMethod
 			builder.ToString(TagRenderMode.EndTag);
 			return MvcHtmlString.Create(builder.ToString());
 		}
-		public static MvcHtmlString Button(this HtmlHelper htmlHelper, string value, string defaultClass = "btn btn-default")
+		public static MvcHtmlString Button(this HtmlHelper htmlHelper, string value,string id, string defaultClass = "btn btn-default")
 		{
 			var builder = new TagBuilder("input");
 			builder.MergeAttribute("type", "button");
+			builder.MergeAttribute("id", id);
 			builder.MergeAttribute("value", value);
 			builder.MergeAttribute("class", defaultClass);
 			builder.ToString(TagRenderMode.EndTag);

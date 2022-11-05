@@ -1,0 +1,15 @@
+2022-11-04 18:51:56,120 [18] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-04 18:51:56,146 [18] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-04 18:52:34,595 [34] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-04 18:52:58,719 [87] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-04 18:53:03,580 [19] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 未登录授权
+2022-11-04 19:05:07,821 [18] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-04 19:05:07,843 [18] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-04 19:08:53,177 [81] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/third 未登录授权
+2022-11-04 19:09:05,037 [89] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/third
+2022-11-04 23:13:28,710 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-04 23:13:29,094 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-04 23:13:52,876 [6] ERROR Eonup.Mvc5.Filter.CusHandleErrorAttribute - 访问http://localhost:6099/Seven/Index 异常 原因:尝试除以零。
+2022-11-04 23:27:01,715 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-04 23:27:02,091 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-04 23:27:47,599 [8] ERROR Eonup.Mvc5.Filter.CusHandleErrorAttribute - 访问http://localhost:6099/Seven/Index 异常 原因:尝试除以零。

@@ -1,0 +1,6 @@
+2022-10-19 22:59:50,906 [42] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-10-19 22:59:51,315 [42] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-10-19 23:16:55,853 [42] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-10-19 23:16:55,875 [42] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-10-19 23:37:41,219 [65] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-10-19 23:37:41,372 [65] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动

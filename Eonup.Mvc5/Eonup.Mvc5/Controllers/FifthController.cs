@@ -1,6 +1,7 @@
 ﻿using Eonup.Business.Service;
 using Eonup.EF.Model;
 using Eonup.Framework;
+using Eonup.Mvc5.Filter;
 using PagedList;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using System.Web.Mvc;
 
 namespace Eonup.Mvc5.Controllers
 {
+	//[CusAuthorize]控制器注册
     public class FifthController : Controller
     {
 		#region Identity
@@ -21,6 +23,7 @@ namespace Eonup.Mvc5.Controllers
 		}
 		#endregion
 		// GET: Fifth
+		[CusAuthorize]//方法注册
 		public ActionResult Index()
         {
 			ViewBag.FirstList = BindCategoryList(this._commodityService.GetChildList<Category>(c => c.ParentCode.Equals("root")));
@@ -29,7 +32,6 @@ namespace Eonup.Mvc5.Controllers
 
 			return View();
         }
-
 		public ActionResult SearchPartialList(string searchString,int orderby =-1,int pageIndex=1,int firstDrop=-1, int secondDrop = -1, int thirdDrop = -1,bool asc=true)
 		{
 			//从第三级下拉框查，如果某级下拉框有选择，那就返回这级的CategoryId
@@ -37,11 +39,14 @@ namespace Eonup.Mvc5.Controllers
 			if (dropId == -1 && string.IsNullOrEmpty(searchString))
 			{
 				searchString = "男装";
+				ViewBag.SearchString = searchString;
 			}
+			ViewBag.SearchString = searchString;
 			Expression<Func<Commodity, decimal>> orderbyLambda = null;
 			if (orderby == -1)
 			{
 				orderbyLambda = c => c.Id;
+				ViewBag.orderby = 0;
 			}
 			else if (orderby == 0)
 			{
@@ -82,7 +87,7 @@ namespace Eonup.Mvc5.Controllers
 			return View(page);
 		}
 		/// <summary>
-		/// 查询二级菜单
+		///  Second List
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>
@@ -137,7 +142,7 @@ namespace Eonup.Mvc5.Controllers
 		/// <param name="Id"></param>
 		/// <returns></returns>
 		[HttpGet]
-		public ActionResult Details(int? Id)
+		public ActionResult Detail(int? Id)
 		{
 			if (Id == null)
 			{
@@ -154,7 +159,10 @@ namespace Eonup.Mvc5.Controllers
 		public ActionResult Edit(int Id)
 		{
 			Commodity commodity = this._commodityService.Find<Commodity>(Id);
-			ViewBag.CategoryList = this._commodityService.GetChildList<Category>(c => c.ParentCode.StartsWith("root"));
+			ViewBag.CategoryList = this._commodityService.GetChildList<Category>(c => c.ParentCode.StartsWith("root")).Select(c=>new SelectListItem() {
+				Text=c.Name,
+				Value=c.Id.ToString()
+			});
 			return View(commodity);
 		}
 		[HttpPost]
@@ -171,7 +179,7 @@ namespace Eonup.Mvc5.Controllers
 				comm.Url = commodity.Url;
 				comm.ImageUrl = commodity.ImageUrl;
 				this._commodityService.Update<Commodity>(comm);
-				return RedirectToAction("Index", "Four");
+				return RedirectToAction("Index", "Fifth");
 			}
 			else
 			{

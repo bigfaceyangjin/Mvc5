@@ -1,0 +1,32 @@
+2022-11-03 18:17:55,758 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-03 18:17:56,144 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-03 18:19:04,834 [9] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 没有用户
+2022-11-03 18:19:27,177 [6] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 22:25:34,391 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-03 22:25:35,102 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-03 22:25:56,530 [6] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 没有用户
+2022-11-03 22:26:01,001 [8] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 没有用户
+2022-11-03 22:26:40,689 [10] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 没有用户
+2022-11-03 22:33:05,034 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-03 22:33:05,410 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-03 22:33:21,072 [10] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 未登录授权
+2022-11-03 22:33:32,795 [6] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 22:33:41,151 [5] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 22:34:00,189 [6] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 未登录授权
+2022-11-03 22:37:49,896 [10] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/Fifth/Index 未登录授权
+2022-11-03 22:44:41,833 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-03 22:44:41,855 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-03 22:44:44,061 [20] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/third 未登录授权
+2022-11-03 22:45:07,529 [13] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/third/index 未登录授权
+2022-11-03 23:05:05,217 [27] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:05:13,010 [33] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:05:16,998 [27] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:05:21,840 [13] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:05:37,299 [27] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/third
+2022-11-03 23:07:49,616 [18] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-03 23:07:49,636 [18] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-03 23:08:12,972 [31] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:09:15,579 [29] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:09:25,345 [27] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
+2022-11-03 23:09:57,505 [27] INFO  Eonup.Mvc5.Filter.CusAuthorize - 访问 http://localhost:6099/third 未登录授权
+2022-11-03 23:10:09,464 [32] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/third

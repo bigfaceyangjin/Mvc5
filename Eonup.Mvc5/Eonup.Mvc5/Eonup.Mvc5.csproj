@@ -179,13 +179,21 @@
     <Compile Include="Controllers\FourController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecondController.cs" />
+    <Compile Include="Controllers\SevenController.cs" />
+    <Compile Include="Controllers\SixController.cs" />
     <Compile Include="Controllers\ThirdController.cs" />
+    <Compile Include="Filter\CusActionFilterAttribute.cs" />
+    <Compile Include="Filter\CusAuthorize.cs" />
+    <Compile Include="Filter\CusHandleErrorAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\XmlUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\MD5Encrypt.cs" />
+    <Compile Include="Utility\RemarkAttribute.cs" />
+    <Compile Include="Utility\UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CfgFiles\Log4.net.xml">
@@ -195,6 +203,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layui\css\layui.css" />
+    <Content Include="Content\layui\css\modules\code.css" />
+    <Content Include="Content\layui\css\modules\laydate\default\laydate.css" />
+    <Content Include="Content\layui\css\modules\layer\default\icon-ext.png" />
+    <Content Include="Content\layui\css\modules\layer\default\icon.png" />
+    <Content Include="Content\layui\css\modules\layer\default\layer.css" />
+    <Content Include="Content\layui\css\modules\layer\default\loading-0.gif" />
+    <Content Include="Content\layui\css\modules\layer\default\loading-1.gif" />
+    <Content Include="Content\layui\css\modules\layer\default\loading-2.gif" />
+    <Content Include="Content\layui\font\iconfont.svg" />
+    <Content Include="Content\layui\layui.js" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -211,6 +230,10 @@
     <Content Include="CfgFiles\Unity.cfg.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\layui\font\iconfont.eot" />
+    <Content Include="Content\layui\font\iconfont.ttf" />
+    <Content Include="Content\layui\font\iconfont.woff" />
+    <Content Include="Content\layui\font\iconfont.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -257,6 +280,16 @@
     <Content Include="Views\Fifth\Edit.cshtml" />
     <Content Include="Views\Fifth\Index.cshtml" />
     <Content Include="Views\Fifth\SearchPartialList.cshtml" />
+    <Content Include="Views\Fifth\Detail.cshtml" />
+    <Content Include="Views\Six\Login.cshtml" />
+    <Content Include="Views\Shared\PartialUser.cshtml" />
+    <Content Include="Views\Seven\Index.cshtml" />
+    <Content Include="Views\Seven\Exception.cshtml" />
+    <Content Include="Views\Seven\ServiceException.cshtml" />
+    <Content Include="Views\Seven\CotrollerException.cshtml" />
+    <Content Include="Views\Seven\ViewException.cshtml" />
+    <Content Include="Views\Shared\Error_404.cshtml" />
+    <Content Include="Views\Seven\ActionTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

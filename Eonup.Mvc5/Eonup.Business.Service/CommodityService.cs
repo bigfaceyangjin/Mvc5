@@ -25,6 +25,9 @@ namespace Eonup.Business.Service
 			return base.Set<Commodity>().Where(x=>cateIdList==null ? true : (cateIdList.Contains(x.CategoryId)) 
 			&&x.Title.Contains(searchString)).ToList();
 		}
-		
+		public void Show()
+		{
+			throw new Exception("这里是 CommodityService Show Exception");
+		}
 	}
 }

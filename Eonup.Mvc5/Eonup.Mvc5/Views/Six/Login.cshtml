@@ -1,0 +1,117 @@
+﻿@model Eonup.Mvc5.Models.CurrentUser
+@{
+    ViewBag.Title = "Login";
+}
+<style type="text/css">
+    input[type='text'], input[type='password'] {
+        display: inline-block;
+    }
+</style>
+<h2>Login</h2>
+<div class="row" style="background-color:antiquewhite;border-radius:30px;">
+    <div class="col-md-8 col-md-offset-2" style="background-color:gainsboro;border-radius:30px;">
+        <section>
+            @using (Html.BeginForm("Login", "Six", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                <h4>使用本地账户登录</h4>
+                <hr />
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "姓名 | 账户名 | E-Mail" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "请输入密码" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.Label("Verify", "验证码", new { @class = "col-md-3 control-label" })
+                    <div class="col-md-9">
+                        @Html.TextBox("txtVerify", "", new { @class = "form-control", placeholder = "请输入验证码" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4 col-lg-offset-3">
+                        <img src="/Six/VerifyCode" title="刷新验证码" class="img" alt="验证码图片" onclick="Refresh(this)" />
+                    </div>
+                    <div class="col-md-3">
+                        <input type="button" value="刷新验证码" id="btnVerify" class="btn btn-primary" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-7 col-md-offset-5">
+                        <input type="submit" class="btn btn-info" />
+                        @Html.ValidationMessage("failed")
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+@section scripts{
+    <script type="text/javascript">
+        $().ready(function () {
+            $("#btnVerify").on('click', function () {
+                $(".img").attr('src', '/Six/VerifyCode/?random=' + Math.random());
+            });
+
+            //Ajax异步登录
+            {
+                $("form").submit(function () {
+                var check = CheckForm();
+                if (!check) {
+                    return false;
+                }
+                    var index = layer.load(0, { shade: false });//0代表加载风格 支持0-2
+                $.ajax({
+                    url: "/Six/AjaxLogin",
+                    dataType: "json", 
+                    type: "Post",
+                    data: { "Name": $("#Name").val(), "Password": $("#Password").val(), "txtVerify": $("#txtVerify").val(), "__RequestVerificationToken": $("input[type='hidden']").val() },//$("form").serialize(),
+                    success: function (data) {
+                        layer.close(index);//关闭load
+                        if (data.result == 0) {
+                            layer.alert(data.msg);
+                            window.location.href = data.Url;
+                        }
+                        else {
+                            layer.alert(data.msg);
+                        }
+                    },
+                    error: function (error) {
+                        layer.alert('请求失败！');
+                    }
+                });
+                return false;
+            });
+            }
+        });
+        function Refresh(obj) {
+            $(obj).attr('src', '/Six/VerifyCode/?random=' + Math.random());
+        }
+        function CheckForm() {
+            var Name = $("#Name").val();
+            var Pwd = $("#Password").val();
+            var Verify = $("#txtVerify").val();
+            if (Name.trim() == '') {
+                layer.tips('请输入账号！','#Name');
+                return false;
+            }
+            else if (Pwd.trim() == '') {
+                layer.tips("请输入密码！","#Password");
+                return false;
+            }
+            else if (Verify.trim()=='') {
+                layer.tips("请输入验证码！","#txtVerify")
+                return false;
+            }
+            return true;
+        }
+    </script>
+}
+

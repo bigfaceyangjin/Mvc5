@@ -8,6 +8,6 @@ namespace Eonup.Business.Interface
 {
 	public interface ICommodityService:IBaseService
 	{
-
+		void Show();
 	}
 }

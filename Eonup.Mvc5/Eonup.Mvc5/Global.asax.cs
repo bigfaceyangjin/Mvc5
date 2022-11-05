@@ -38,5 +38,27 @@ namespace Eonup.Mvc5
 
 			ControllerBuilder.Current.SetControllerFactory(new BigZhanControllerFactory());//创建自定义的控制器实例
         }
+		/// <summary>
+		/// 全局异常
+		/// </summary>
+		/// <param name="o"></param>
+		/// <param name="e"></param>
+		protected void Application_Error(object o,EventArgs e)
+		{
+			//在出现未处理的错误时运行的代码
+			var error= Server.GetLastError();
+			//异常状态码
+			var code= (error is HttpException) ? (error as HttpException).GetHttpCode() : 500;
+			if (code != 404)//如果不是URL错误
+			{
+				//记录日志错误信息
+				logger.Error($"{Request.Url}:{ error.Message}");
+			}
+			logger.Error("Application_Error");
+			Response.Redirect("/Home/Error404");
+			Server.ClearError();
+			//Response.Write(code);
+			//Context.RewritePath($"~/Views/Shared/Error_{code}.cshtml", false);
+		}
     }
 }
