@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Content/dialog.css" rel="stylesheet" />
+</head>
+<body> 
+<div>
+<div class="divRow"><span>邮政运单不存在：</span>邮政的运单号无法找到对应到收入的运单号；</div> 
+<div class="divRow">
+    <span>运单上月已导入：</span>运单上月已经导入系统结算一次，本月再次导入系统进行结算；</div>
+<div class="divRow">
+    <span>本月运单重复：</span>本次导入的数据中存在相同的运单号；</div>
+<div class="divRow">
+    <span>快递类型不一致：</span>成本中的快递类型为经济快递，收入中快递类型为标准快递；或者成本中的快递类型为标准快递，收入中快递类型为经济快递；
+</div>
+<div class="divRow">
+    <span>本月运单号重复,邮政运单不存在</span>本次导入的数据中存在相同的运单号，且邮政的运单号无法找到对应到收入的运单号；
+</div>
+<div class="divRow">
+    <span>本月运单号重复,运单上月已导入</span>本次导入的数据中存在相同的运单号，运单上月已经导入系统结算一次，本月再次导入系统进行结算；
+</div>
+<div class="divRow">
+    <span>运单上月已导入,快递类型不一致</span>运单上月已经导入系统结算一次，本月再次导入系统进行结算，邮政给与的快递类型与收入中的快递类型不一致；
+</div>
+<div class="divRow">
+    <span>本月运单号重复,快递类型不一致</span>本次导入的数据中存在相同的运单号，邮政给与的快递类型与收入中的快递类型不一致；
+</div>
+<div class="divRow">
+    <span>本月运单号重复,快递类型不一致,运单上月已导入</span>本次导入的数据中存在相同的运单号，邮政给与的快递类型与收入中的快递类型不一致，运单上月已经导入系统结算一次，本月再次导入；
+</div>
+<input type="button" value="确定" class="popbtn1 mg" onclick="frameElement.api.opener.DG.close();" />
+</div>
+</body>
+</html>

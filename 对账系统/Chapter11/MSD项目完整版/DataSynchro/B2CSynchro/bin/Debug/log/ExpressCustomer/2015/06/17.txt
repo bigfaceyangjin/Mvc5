@@ -1,0 +1,2 @@
+﻿2015-06-17 08:50:10,039 INFO  ECLog  - 任务名:“ExpressCurInfoJob”,唯一标识符:“5b676633-8108-45d3-9bfd-066ec07ad0cd”开始运行
+2015-06-17 08:50:22,345 INFO  ECLog  - 任务名:“ExpressCurInfoJob”,唯一标识符:“5b676633-8108-45d3-9bfd-066ec07ad0cd”运行完毕,共获取0条数据

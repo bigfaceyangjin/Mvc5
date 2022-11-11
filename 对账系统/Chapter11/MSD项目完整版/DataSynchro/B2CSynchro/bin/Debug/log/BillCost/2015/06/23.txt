@@ -1,0 +1,10 @@
+﻿----------------------header--------------------------
+2015-06-23 09:06:52,290 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“7af041a8-b779-4f6e-b4ff-e399bc7bf4c6”开始运行
+2015-06-23 09:06:55,634 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“7af041a8-b779-4f6e-b4ff-e399bc7bf4c6”运行完毕,共获取0条数据
+2015-06-23 12:00:00,814 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“4ab2ee0a-a0a4-4e94-96fd-7d2838f4601b”开始运行
+2015-06-23 12:00:02,314 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“4ab2ee0a-a0a4-4e94-96fd-7d2838f4601b”运行完毕,共获取0条数据
+2015-06-23 15:00:00,457 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“b71b993c-0723-4a4b-b38b-5542d3ae905f”开始运行
+2015-06-23 15:00:01,916 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“b71b993c-0723-4a4b-b38b-5542d3ae905f”运行完毕,共获取0条数据
+2015-06-23 18:00:00,931 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“45e08ca3-4433-46ec-a54c-71e3cb6b1ba9”开始运行
+2015-06-23 18:00:02,103 INFO  BillCostLog  - 任务名:“BillCostJob”,唯一标识符:“45e08ca3-4433-46ec-a54c-71e3cb6b1ba9”运行完毕,共获取0条数据
+----------------------footer--------------------------

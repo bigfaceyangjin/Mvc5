@@ -1,0 +1,10 @@
+﻿----------------------header--------------------------
+2015-06-23 09:06:52,290 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“e4a03058-3d61-4ba4-9326-73d67b364e68”开始运行
+2015-06-23 09:07:19,073 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“e4a03058-3d61-4ba4-9326-73d67b364e68”运行完毕,共获取0条数据
+2015-06-23 12:00:00,814 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“92282607-b2e7-44de-a3b1-b470374fd089”开始运行
+2015-06-23 12:00:15,169 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“92282607-b2e7-44de-a3b1-b470374fd089”运行完毕,共获取0条数据
+2015-06-23 15:00:00,446 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“ee2aac6b-53f6-41db-87ac-60f5dff4afa8”开始运行
+2015-06-23 15:00:10,837 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“ee2aac6b-53f6-41db-87ac-60f5dff4afa8”运行完毕,共获取0条数据
+2015-06-23 18:00:00,929 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“716ef20b-555e-41cc-8a86-638e8b82d097”开始运行
+2015-06-23 18:00:21,078 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“716ef20b-555e-41cc-8a86-638e8b82d097”运行完毕,共获取0条数据
+----------------------footer--------------------------

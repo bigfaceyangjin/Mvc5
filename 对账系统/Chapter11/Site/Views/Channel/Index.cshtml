@@ -1,0 +1,165 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+}
+<style type="text/css">
+    html, body
+    {
+        overflow:hidden;
+    }
+    tbody
+    {
+         height:50px;
+    }
+    table
+    {
+          overflow-y:auto;
+          overflow-x:hidden;
+    }
+</style>
+<link href="~/Lib/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/Lib/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Content/DataTablesExt.js"></script>
+<script type="text/javascript">
+    //查询 刷新
+    function reloadList() {
+        var tables = $('#table_local').dataTable().api();//获取DataTables的Api，详见 http://www.datatables.net/reference/api/
+        tables.ajax.reload();
+    }
+    function deleteRecord(id) {
+        $.dialog.confirm("确定要删除吗？", function () { $.dialog.alert("删除成功！"); }, null)
+    }
+    function successFun() {
+        $.dialog.alert("渠道添加成功！");
+    }
+    //弹出框  
+    var dg;
+    function showPublishWin() {
+        dg = new $.dialog({
+            id: "AddChannel",
+            title: "添加渠道",
+            content: "url:/Channel/AddChannel",
+            width: 424,
+            height: 320,
+            max: false,
+            min: false,
+            lock: true,
+            close: true,
+            cancel: true, //X按钮是否显示，如果设置了回调函数，一定会显示  
+            //cancel: controlAllBtn,  
+            ok: successFun //点击确定执行的回调函数
+        });
+        dg.show();
+    }
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 27) { // 按 Esc 
+            //要做的事情
+        }
+        if (e && e.keyCode == 13) { // enter 键
+            //要做的事情
+            reloadList();
+        }
+    };
+</script>
+<script type="text/javascript">
+    $(function () {
+        var h = $(document).height() - 258;
+        $("#table_local").dataTable({
+            //"iDisplayLength": 10,//每页显示10条数据
+            //这里也可以设置分页，但是不能设置具体内容，只能是一维或二维数组的方式，所以推荐下面language里面的写法。
+            //"aLengthMenu": [[10, 15, 20, 25, 50, -1], [10, 15, 20, 25, 50, "All"]],
+            bProcessing: true,
+            //"dom": 'i,p',//l - Length changing  选择每页显示行数下拉框的控件 f - Filtering input  搜索过滤控件t - The Tabletools    导出excel，csv的按钮
+            //i - Information  显示汇总信息（从 1 到 100 /共 1,288 条数据） p - Pagination   分页控件 r - pRocessing   显示加载时的进度条 C - copy 显示复制，excel的控件
+            //ajax: "/SendGoods/List",
+            "scrollY": h,
+            "scrollCollapse": "true",
+            "dom": 'tr<"bottom"lip><"clear">',
+            "bServerSide": false,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            sAjaxSource: "@Url.Action("List", "Channel")",
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "ChannelCode", "value": $("#ChannelCode").val() },
+                    { "name": "CnName", "value": $("#CnName").val() },
+                    { "name": "EnName", "value": $("#EnName").val() }
+                    );
+            },
+            columns: [
+               {
+                   title: "1",
+                   "visible": false,
+                   "data": "ID", "sClass": "center",    //样式
+                   orderable: false,    //该列不排序
+                   "render": function (data, type, row) {    //列渲染
+                       return "<label class='position-relative'><input id='cbx" + data + "' type='checkbox' onclick='controlSelectAll(" + data + ")' class='cbx' value='" + data + "'/>";
+                   }
+               },
+               { "data": "ChannelCode", title: "渠道代码" },
+               { "data": "ChannelStyle", title: "渠道类别" },
+               { "data": "CnName", title: "中文名" },
+               { "data": "EnName", title: "英文名" },
+               {
+                   "data": "Status", title: "是否启用", orderable: false, "render": function (data, type, row, meta) { //自定义列
+                       if (data == "1") {
+                           return "是";
+                       }
+                       else {
+                           return "否";
+                       }
+                   }
+               }
+               , {
+                   "data": "ID", orderable: false, title: "操作", "render": function (data, type, row, meta) { //自定义列
+                       return "<a style='visibility:visible' onclick='deleteRecord(" + data + ")'>删除</a>";
+                   }
+               }
+            ],
+            paging: true,//分页
+            ordering: true,//是否启用排序
+            searching: false,//搜索
+            language: {
+                lengthMenu: '每页显示：<select class="form-control input-xsmall">' + '<option value="5">5</option>' + '<option value="10">10</option>' + '<option value="15">15</option>'
+                    + '<option value="20">20</option>' + '<option value="25">25</option>' + '<option value="30">30</option>' + '<option value="35">35</option>' + '<option value="40">40</option>',//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: "总共 <span class='pagesStyle'>(_PAGES_) </span>页，显示 _START_ -- _END_ ，共<span class='recordsStyle'> (_TOTAL_)</span> 条",//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+
+        });
+        $("#table_local_filter input[type=search]").css({ width: "auto" });//右上角的默认搜索文本框，不写这个就超出去了。
+    });
+</script>
+    <div class="areabx clear" style="margin-bottom:0px;padding-bottom:0px;">
+        @using (Html.BeginForm("List", null, FormMethod.Get, new { @clase = "form-inline", @role = "form" }))
+        {
+            <div class="areabx_header">渠道管理</div>
+            <ul class="formod mgt10">
+                <li><span>渠道代码：</span>@Html.TextBox("ChannelCode","", new {@class="trade-time wid153" })</li>
+                <li><span>渠道中文名：</span>@Html.TextBox("CnName", "",new {@class="trade-time" })</li>
+                <li><span>渠道英文名：</span>@Html.TextBox("EnName", "",new {@class="trade-time" })</li>
+            </ul>
+            <div class="botbtbx pdb0">
+                <input type="button" value="添加渠道" class="btn btn-primary" onclick="showPublishWin()"/>
+                <input type="button" value="查询" onclick="reloadList();" class="btn btn-primary">
+            </div>
+        }
+        <div class="tob_box mgt15">
+            <table id="table_local" class="display"  cellspacing="0" cellpadding="0" border="0" style="width:100%">
+            </table>
+        </div>
+    </div>
+

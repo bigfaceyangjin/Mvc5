@@ -1,0 +1,198 @@
+﻿@model List<Core.Reconciliation.WayBillException>
+@using ProjectBase.Utils.Entities
+@using ProjectBase.Utils
+@{
+    ViewBag.Title = "运单异常数据详情";
+}
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script src="~/libs/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var h = $(document).height() - 284;
+        //成本详细
+        var table = $("#table_Cost").dataTable({
+            bProcessing: true,
+            //"deferRender": true,//当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+            //"scrollY": h,
+            //"scrollX": $(document).width(),
+            "scrollCollapse": "true",
+            "dom": 'tr<"bottom"lp><"clear">',
+            "bServerSide": true,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            showRowNumber: true,
+            sAjaxSource: "@Url.Action("WayCostExByID", "Reconciliation")",
+            "order": [[2, "asc"]],
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "CostID", "value": $("#hidCostID").val() }
+                    );
+            },
+            columns: [
+                { "data": "ExpressNo" },
+                { "data": "BatchNO" },
+                { "data": "Weight", orderable: false },
+                { "data": "PostingTime" },
+                { "data": "SendAddress" },
+                { "data": "Product" },
+                { "data": "WayBillFee" },
+                { "data": "ProcessingFee" },
+                { "data": "WayBillMargins" }
+            ],
+            paging: false,//分页
+            ordering: false,//是否启用排序
+            searching: false //搜索          
+        });
+
+      //收入详细
+      var table = $("#table_Income").dataTable({
+          bProcessing: true,
+          //"deferRender": true,//当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+          //"scrollY": h,
+          //"scrollX": $(document).width(),
+          "scrollCollapse": "true",
+          "dom": 'tr<"bottom"lp><"clear">',
+          "bServerSide": true,                    //指定从服务器端获取数据  
+          sServerMethod: "POST",
+          showRowNumber: true,
+          sAjaxSource: "@Url.Action("WayIncomeList", "Reconciliation")",
+            "order": [[2, "asc"]],
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "ExpressNo", "value": $("#hidExpressNo").val() }
+                    );
+            },
+            columns: [
+                { "data": "ExpressNo" },
+                { "data": "LoadBillNum" },
+                { "data": "Weight", orderable: false },
+                { "data": "PostingTime" },
+                { "data": "ReceiverProvince" },
+                { "data": "ExpressType" },
+                { "data": "ExpressFee" },
+                { "data": "OperateFee" },
+                { "data": "WayBillMargins" }
+            ],
+            paging: false,//分页
+            ordering: false,//是否启用排序
+            searching: false //搜索          
+        });
+      //设置选中行样式
+      $('#table_local tbody').on('click', 'tr', function () {
+          if ($(this).hasClass('selected')) {
+              $(this).removeClass('selected');
+          }
+          else {
+              table.$('tr.selected').removeClass('selected');
+              $(this).addClass('selected');
+          }
+      });
+    });
+    function Goto() {
+        self.parent.closeCurrentTag(); //关闭当前页签
+    }
+</script>
+<input type="hidden"  id="hidExpressNo" value="@ViewBag.ExpressNo" />
+<input type="hidden"  id="hidID" value="@ViewBag.ID" />
+<input type="hidden"  id="hidCostID" value="@ViewBag.CostID" />
+
+<div class="areabx clear">
+    <div class="areabx_header">
+        运单异常数据详情<span class="spanMsg">
+            <input type="button" value=" 返 回 " class="popbtn1 mg" onclick="Goto()" /></span>
+    </div>
+    <div class="tob_box mgt15">
+        <div class="tob_box">
+            <table class="display dataTable no-footer" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>客户简称</th>
+                        <th>收寄日期</th>
+                        <th>运单号</th>
+                        <th>提单号</th>
+                        <th>重量(kg)</th>
+
+                        <th>类型</th>
+                        <th>运费</th>
+                        <th>操作费</th>
+                        <th>其他费用</th>
+                        <th>总金额</th>
+                        <th>状态</th>
+
+                        <th>异常原因</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {       
+                    <tr class="odd">
+                        <td rowspan="2">@item.CusName</td>
+                        <td rowspan="2">@item.PostingTime</td>
+                        <td rowspan="2">@item.ExpressNo</td>
+                        <td rowspan="2">@item.LoadBillNum</td>
+                        <td rowspan="2">@HtmlExpand.FormatDeciaml(item.Weight == null ? 0m : item.Weight / 100)</td>
+
+                        <td>成本</td>
+                        <td>@item.WayBillFee.DecimalFormat()</td>
+                        <td>@item.ProcessingFee.DecimalFormat()</td>
+                        <td></td>
+                        <td>@HtmlExpand.FormatDeciaml(item.WayBillFee + item.ProcessingFee + item.CostOtherFee)</td>
+                        <td>@item.CostStatus.ToChinese()</td>
+
+                        <td rowspan="2">@item.ExceptionType.ToChinese()</td>
+
+                    </tr>
+                    <tr class="odd">
+                        <td>收入</td>
+                        <td>@item.ExpressFee.DecimalFormat()</td>
+                        <td>@item.OperateFee.DecimalFormat()</td>
+                        <td></td>
+                        <td>@HtmlExpand.FormatDeciaml(item.ExpressFee + item.OperateFee + item.InComeOtherFee)</td>
+                        <td>@item.InComeStatus.ToChinese()</td>
+                    </tr>    
+                }
+            </table>
+        </div>
+    </div>
+</div>
+<div class="areabx clear">
+    <div class="areabx_header">运单成本详情</div>
+    <div class="tob_box mgt15">
+        <table id="table_Cost" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>运单号</th>
+                    <th>提单号</th>
+                    <th>重量(kg)</th>
+                    <th>收寄日期</th>
+                    <th>寄达地</th>
+                    <th>快递产品类型</th>
+                    <th>邮政运费</th>
+                    <th>邮件处理费</th>
+                    <th>其他费用</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="areabx clear">
+    <div class="areabx_header">运单收入详情</div>
+    <div class="tob_box mgt15">
+        <table id="table_Income" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>运单号</th>
+                    <th>提单号</th>
+                    <th>重量(kg)</th>
+                    <th>清关完成日期</th>
+                    <th>收件城市</th>
+                    <th>快递产品类型</th>
+                    <th>客户运费</th>
+                    <th>客户操作费</th>
+                    <th>其他费用</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+﻿2015-06-24 09:00:44,618 INFO  LoadBillLog  - 任务名:“LoadBillJob”,唯一标识符:“cd7e0724-7ccb-49c4-adbe-55ca7ec788c2”开始运行
+2015-06-24 09:01:01,493 INFO  LoadBillLog  - 任务名:“LoadBillJob”,唯一标识符:“cd7e0724-7ccb-49c4-adbe-55ca7ec788c2”运行完毕,共获取[0][0]条数据

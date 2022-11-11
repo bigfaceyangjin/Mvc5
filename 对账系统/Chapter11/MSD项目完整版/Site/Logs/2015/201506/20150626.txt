@@ -1,0 +1,57 @@
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-26 17:26:07,337 [90] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select b.ID,
+b.ReconcileDate AS ReconcileDate,
+c.Cus_Name AS CusName,
+b.LoadBillNum AS LoadBillNum,
+b.FeeWeight AS FeeWeight,
+(SELECT SUM(Weight)/1000 FROM WayBillCost WHERE BatchNO=b.LoadBillNum) AS ExpressWeight,
+(SELECT cast(COUNT(*) as signed) FROM WayBillCost where BatchNO=b.LoadBillNum) AS ExpressCount,
+a.CompletionTime AS CompletionTime,
+IFNULL(b.GroundHandlingFee,0) AS GroundHandlingFee,
+IFNULL(b.StoreFee,0) AS CostStoreFee,
+CASE WHEN b.ID IS NULL THEN a.PreTotalCollectFees ELSE 0.0 END AS CostExpressFee,
+CASE WHEN b.ID IS NULL THEN a.PreTotalOperateFee ELSE 0.0 END AS CostOperateFee,
+null AS CostOtherFee,
+null AS CostTotalFee,
+b.PayStatus AS CostStatus,
+a.LoadFee AS InComeLoadFee,
+a.StoreFee AS InComeStoreFee,
+a.TotalCollectFees AS InComeExpressFee,
+a.TotalOperateFee AS InComeOperateFee,
+a.OtherFee AS InComeOtherFee,
+null AS InComeTotalFee,
+a.PayStatus AS InComeStatus,
+null AS TotalGrossProfit,
+null AS GrossProfitRate,
+b.`Status`  FROM LoadBillInCome a RIGHT JOIN LoadBillCost b ON a.LoadBillNum=b.LoadBillNum LEFT JOIN CustomerInfo c ON a.CustomerID=c.ID WHERE b.`Status`!=0   limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.TimeoutException: Timeout in IO operation
+   在 MySql.Data.MySqlClient.TimedStream.StopTimer()
+   在 MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.ExceptionInterceptor.Throw(Exception exception)
+   在 MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlConnection.HandleTimeoutOrThreadAbort(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-26 17:26:07,417 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-26 17:26:07,417 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation
+2015-06-26 17:26:07,419 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-26 17:26:07,419 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation
+2015-06-26 17:26:07,419 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-26 17:26:07,419 [90] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation

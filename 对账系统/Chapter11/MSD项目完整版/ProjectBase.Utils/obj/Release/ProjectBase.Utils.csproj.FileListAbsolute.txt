@@ -1,0 +1,16 @@
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\ProjectBase.Utils.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\ProjectBase.Utils.pdb
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\log4net.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\Moq.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\NPOI.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\NPOI.OOXML.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\NPOI.OpenXml4Net.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\NPOI.OpenXmlFormats.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\System.Web.Mvc.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\log4net.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\Moq.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\System.Web.Mvc.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Release\zh-Hans\System.Web.Mvc.resources.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\obj\Release\ProjectBase.Utils.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\obj\Release\ProjectBase.Utils.pdb

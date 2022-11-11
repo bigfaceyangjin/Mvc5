@@ -1,0 +1,148 @@
+﻿@model  ProjectBase.Utils.Entities.SysInfo
+@{
+    Layout = null;
+    ViewBag.Title = "Main";
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <style type="text/css">
+        .usertablerow1 {
+            BACKGROUND-COLOR: #f7f7f7;
+        }
+
+        .usertablerow2 {
+            BACKGROUND-COLOR: #f0f0f0;
+        }
+
+        .usertableborder {
+            BORDER-RIGHT: #3795d2 1px solid;
+            BORDER-TOP: #3795d2 1px solid;
+            FONT-WEIGHT: normal;
+            FONT-SIZE: 12px;
+            BORDER-LEFT: #3795d2 1px solid;
+            WIDTH: 96%;
+            LINE-HEIGHT: normal;
+            BORDER-BOTTOM: #3795d2 1px solid;
+            FONT-STYLE: normal;
+            BACKGROUND-COLOR: #ffffff;
+            FONT-VARIANT: normal;
+        }
+
+        .usertableborder2 {
+            BORDER-RIGHT: #3795d2 1px solid;
+            BORDER-TOP: #3795d2 1px solid;
+            FONT-WEIGHT: normal;
+            FONT-SIZE: 12px;
+            BORDER-LEFT: #3795d2 1px solid;
+            LINE-HEIGHT: normal;
+            BORDER-BOTTOM: #3795d2 1px solid;
+            FONT-STYLE: normal;
+            BACKGROUND-COLOR: #ffffff;
+            FONT-VARIANT: normal;
+        }
+
+        TH {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 12px;
+            COLOR: blue;
+            HEIGHT: 25px;
+            background-image: url(../Images/win_top.png);
+        }
+
+        .input {
+            BORDER-RIGHT: 1px;
+            BORDER-TOP: 1px;
+            BORDER-LEFT: 1px;
+            BORDER-BOTTOM: 1px;
+        }
+
+        FORM {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            PADDING-BOTTOM: 0px;
+            MARGIN: 0px;
+            PADDING-TOP: 0px;
+        }
+    </style>
+</head>
+<body bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0">
+    <br />
+        <table class="usertableborder" cellspacing="1" cellpadding="3" width="96%" align="center"
+        border="0">
+        <tr>
+            <th colspan="2">欢迎登录财务系统</th>
+        </tr>
+        <tr>
+            <td class="usertablerow1" align="right" width="11%">
+                <strong>官方网站</strong></td>
+            <td class="usertablerow1" width="89%">
+                <a href="http://www.kjy.cn/" target="_blank">http://www.kjy.cn/</a></td>
+        </tr>
+    </table>
+    <br />
+    <table class="usertableborder" cellspacing="1" cellpadding="3" width="96%" align="center"
+        border="0">
+        <tr>
+            <th colspan="3">环境信息</th>
+        </tr>
+        <tr>
+            <td class="usertablerow2" style="width: 35%">服务器操作系统：@Model.ServiveSystem</td>
+            <td class="usertablerow2">IIS版本名称：@Model.ServiceIIS</td>
+            <td class="usertablerow2" style="width: 33%">服务器.NET版本：@Model.ServiceNetVersion</td>
+        </tr>
+        <tr>
+            <td class="usertablerow1">服务器IP地址：@Model.ServerIP</td>
+            <td class="usertablerow1">服务器当前时间：@Model.ServerTime</td>
+            <td class="usertablerow1">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="usertablerow2">
+                <div align="left" width="33%">
+                    当前版本：@Model.Versions
+                </div>
+            </td>
+            <td class="usertablerow2">
+                <div align="left">
+                    站点物理路径：@Model.PhysicalPath
+                </div>
+            </td>
+            <td class="usertablerow2">
+                <div align="left">
+                    网站端口号：@Model.ServicePort
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="usertablerow1">
+                <div align="left">
+                    是否开启客户端验证：@Model.IsClientValidationEnabled
+                </div>
+            </td>
+            <td class="usertablerow1">
+                <div align="left">
+                    是否记录操作日志：@Model.IsLogEnabled
+                </div>
+            </td>
+            <td class="usertablerow1">
+                <div align="left">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table class="usertableborder" cellspacing="1" cellpadding="3" width="96%" align="center"
+        border="0">
+        <tr>
+            <th colspan="2">版权声明</th>
+        </tr>
+        <tr>
+            <td class="usertablerow1" align="right" width="11%">
+                <strong>官方网站</strong></td>
+            <td class="usertablerow1" width="89%">
+                <a href="http://www.kjy.cn/" target="_blank">http://www.kjy.cn/</a></td>
+        </tr>
+    </table>
+</body>
+</html>

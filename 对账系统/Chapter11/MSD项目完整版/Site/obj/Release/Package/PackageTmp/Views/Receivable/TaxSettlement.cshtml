@@ -1,0 +1,157 @@
+﻿@using ProjectBase.Utils;
+@model ProjectBase.Utils.Entities.IPageOfList<Core.Receivable.TaxDetail>
+@{
+    ViewBag.Title = "税费结算";
+}
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script type="text/ecmascript">
+    //批量发货验证
+    function selectValite() {
+        var ids = "";
+        $('#table_local').find('tr > td:first-child input:checkbox')
+            .each(function () {
+                if (this.checked) {
+                    ids += $(this).val() + ",";
+                }
+            });
+        //如果没有勾选，提示
+        if (ids === "") {
+            $.dialog.alert("请选择一行数据！");
+            return;
+        }
+        $('#myModal').modal('show');
+    }
+    //批量发货操作
+    function sendGoodsItem() {
+        //在此用了BootStrap的一个插件，BootStrap.Message,并中文化
+        $('#myModal').modal('hide');
+        //获取所有勾选ID
+        var ids = "";
+        $('#table_local').find('tr > td:first-child input:checkbox')
+            .each(function () {
+                if (this.checked) {
+                    ids += $(this).val() + ",";
+                }
+            });
+        //如果没有勾选，提示
+        if (ids === "") {
+            $.dialog.alert("请选择一行数据！");
+            return;
+        } else {
+            ids = ids.substr(0, ids.length - 1);
+        }
+        $.ajax({
+            url: "#",
+            type: "POST",
+            data: { "ids": ids },
+            success: function (data) {
+                $.dialog.alert(data);
+                reloadList();//重新加载
+            }
+        });
+    }
+    //查询 刷新
+    function reloadList() {
+        var tables = $('#table_local').dataTable().api();//获取DataTables的Api，详见 http://www.datatables.net/reference/api/
+        tables.ajax.reload();
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        var table = $("#table_local").dataTable({
+            bProcessing: true,
+            "scrollY": table_h,
+            "scrollCollapse": "true",
+            "dom": 'tr<"bottom"lip><"clear">',
+            "bServerSide": true,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            showRowNumber:true,
+            sAjaxSource: "@Url.Action("TaxSettlementList", "Receivable")",
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "CusShortName", "value": $("#CusShortName").val() },
+                    { "name": "LoadBillNum", "value": $("#LoadBillNum").val() },
+                    { "name": "ExpressNo", "value": $("#ExpressNo").val() },
+                    { "name": "PayStatus", "value": $("#PayStatus").find("option:selected").val() }
+                     );
+            },
+            columns: [
+               {
+                   "data": "ID", title: "<input type='checkbox' id='chkAllColl' onclick='selectAll()'/> 序号", orderable: false,
+                   "render": function (data, type, row, meta) {
+                       return row.Index+" <input id='cbx" + data + "' type='checkbox' onclick='controlSelectAll(" + data + ")' class='cbx' value='" + data + "'/>";
+                   }
+               },
+                { "data": "CusName",title: "客户简称" },
+                { "data": "LoadBillNum",title: "提货单号" },
+                { "data": "ExpressNo",title: "运单号" },
+                { "data": "TaxBillNO",title: "税单号" },
+                { "data": "TaxFee",title: "税费" },
+                { "data": "AffirmTime",title: "税费确认时间" },
+                { "data": "InputTime",title: "税费导入时间" },
+                { "data": "PayStatus",title: "结算状态" }
+            ],
+            paging: true,//分页
+            ordering: true,//是否启用排序
+            searching: true,//搜索
+            language: {
+                "sProcessing": "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+
+      });
+        //设置选中行样式
+        $('#table_local tbody').on('click', 'tr', function () {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+</script>
+<div class="areabx clear">
+    @using (Html.BeginForm("List", null, FormMethod.Get, new { @clase = "form-inline", @role = "form" }))
+    {
+          <div id="divSearch">
+        @*<div class="areabx_header">税费结算</div>*@
+        <ul class="formod">
+            <li><span>客户简称：</span>@Html.TextBox("CusShortName","",new { @class = "trade-time wid153" })</li>
+            <li><span>提单号：</span>@Html.TextBox("LoadBillNum","", new { @class = "trade-time" })</li>
+            <li></li>
+        </ul>
+        <ul class="formod">
+            <li><span>运单号：</span>@Html.TextBox("ExpressNo","", new { @class = "trade-time wid153" })</li>
+            <li><span>结算状态：</span>@Html.DropDownList("PayStatus", Html.EnumToList(typeof(Core.PayStatus)), new { @class = "trade-time" })</li>
+            <li></li>
+        </ul>
+        <div class="botbtbx pdb0">
+            <input type="button" value="查询" onclick="reloadList();" class="btn btn-primary">
+            <input type="button" value="批量扣款" class="btn btn-primary" onclick="selectValite()" />
+        </div>
+              </div>
+    }
+    <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+        </table>
+    </div>
+</div>

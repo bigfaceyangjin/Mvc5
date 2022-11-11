@@ -1,0 +1,19 @@
+----------------------header--------------------------
+2016-04-09 12:10:02,186 [10] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT COUNT(e.ID) as Count FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'wl_finance.waybillincome' doesn't exist
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-04-09 12:10:02,309 [10] ERROR NHibernate.Util.ADOExceptionReporter - Table 'wl_finance.waybillincome' doesn't exist
+2016-04-09 12:10:02,313 [10] ERROR NHibernate.Util.ADOExceptionReporter - Table 'wl_finance.waybillincome' doesn't exist
+2016-04-09 12:10:02,314 [10] ERROR NHibernate.Util.ADOExceptionReporter - Table 'wl_finance.waybillincome' doesn't exist

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Content/dialog.css" rel="stylesheet" />
+</head>
+<body> 
+<div>
+<div class="divRow"><span>邮政提单不存在：</span>邮政的提单号无法找到对应到收入的提单号；</div> 
+<div class="divRow">
+<span>提单上月已导入：</span>提单费用上月已经导入系统结算一次，本月再次导入系统进行结算；</div>
+<div class="divRow">
+<span>提单本月重复：</span>本次导入的数据中存在相同的提单号；</div>
+<div class="divRow">
+<span>提单上月已导入，本月提单号重复：</span>同一个提单同时存在【2】和【3】两种异常情况；</div>
+<div class="divRow">
+<span>邮政提单不存在，提单号重复：</span>同一个提单同时存在【1】和【3】两种异常情况；
+    </div>
+<input type="button" value="确定" class="popbtn1 mg" onclick="frameElement.api.opener.DG.close();" />
+</div>
+</body>
+</html>

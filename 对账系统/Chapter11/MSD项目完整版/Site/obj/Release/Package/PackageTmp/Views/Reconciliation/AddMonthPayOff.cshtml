@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "AddMonthPayOff";
+    Layout = null;
+}
+@Html.Raw(ViewBag.Msg)
+<script src="~/Scripts/jquery-1.8.3.min.js"></script>
+<link href="~/Content/main.css" rel="stylesheet" />
+<style type="text/css">
+    table tr {
+        height:24px;
+    }
+</style>
+<script type="text/javascript">
+    function selectpayMonth() {
+        var list = $('input:radio[name="monthPayOff"]:checked').val();
+        if (list == null) {
+            return false;
+        }
+        else {
+            frameElement.api.opener.postSelectData(list,false);
+        }
+    }
+</script>
+
+        @using (Html.BeginForm("AddMonthPayOff", "Reconciliation", FormMethod.Post, new { @clase = "form-inline", @role = "form", name = "from1" }))
+        {
+            <table style="text-align:center;width:190px;margin-top:10px;">
+                <tr><td style="width:190px;"><input type="radio" name="monthPayOff"  value="@ViewBag.PreYearMonth"/>  @ViewBag.PreMonthStr</td></tr>
+                <tr><td><input type="radio" name="monthPayOff" value="@ViewBag.YearMonth"/>  @ViewBag.MonthStr</td></tr>
+                <tr><td><input type="radio" name="monthPayOff" value="@ViewBag.NextYearMonth"/>  @ViewBag.NextMonthStr</td></tr>
+                <tr><td><input type="button" value="确定" onclick="selectpayMonth()" class="popbtn1 mg" style="text-align:center;margin:10px 0 10px 10px !important;">
+                @*<input type="button" value="关闭" class="popbtn3 mg2" onclick="frameElement.api.opener.addDG.close();" />*@</td> 
+              </tr>
+            </table>
+        }

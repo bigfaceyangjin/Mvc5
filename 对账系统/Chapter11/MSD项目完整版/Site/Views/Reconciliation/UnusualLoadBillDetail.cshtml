@@ -1,0 +1,115 @@
+﻿@using ProjectBase.Utils;
+@using ProjectBase.Utils.Entities;
+@model Core.Reconciliation.LoadBillCost
+@{
+    ViewBag.Title = "提单异常数据详情";
+    Core.Receivable.LoadBillInCome loadBillInCome = ViewBag.LoadBillInCome;
+}
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script type="text/javascript">
+    function Goto() {
+        self.parent.closeCurrentTag(); //关闭当前页签
+    }
+</script>
+<div class="areabx clear">
+    <div class="areabx_header">@ViewBag.Title<span class="spanMsg"> <input type="button" value=" 返 回 " class="popbtn1 mg" onclick="Goto()" /></span></div>
+      <div class="tob_box mgt15">
+    <div class="tob_box">
+        <table class="display dataTable no-footer" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>客户简称</th>
+                    <th>提单号</th>
+                    <th>计费重量（kg）</th>
+                    <th>包裹数量</th>
+                    <th>清关完成时间</th>
+                    <th>对账日期</th>
+                    <th>类型</th>
+                    <th>提货费</th>
+                    <th>仓租</th>
+                    <th>异常原因</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td rowspan="2">@loadBillInCome.CustomerInfoBy.Instance().CusName</td>
+                    <td rowspan="2">@Model.LoadBillNum</td>
+                    <td rowspan="2">@HtmlExpand.FormatDeciaml(Model.FeeWeight)</td>
+                    <td rowspan="2">@Model.GetWayBillCount()</td>
+                    <td rowspan="2">@loadBillInCome.CompletionTime.ToStringDate()</td>
+                    <td rowspan="2">@Model.ReconcileDate.ToStringDate()</td>
+                    <td>成本</td>
+                    <td>@Model.GroundHandlingFee.DecimalFormat()</td>
+                    <td>@Model.StoreFee.DecimalFormat()</td>
+                    <td rowspan="2">@Model.Status.ToChinese()</td>
+                </tr>
+                <tr class="odd">
+                    <td>收入</td>
+                    <td>@loadBillInCome.LoadFee.DecimalFormat()</td>
+                    <td>@loadBillInCome.StoreFee.DecimalFormat()</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </div>
+</div>
+<div class="areabx clear">
+    <div class="areabx_header">提单成本详情</div>
+      <div class="tob_box mgt15">
+    <div class="tob_box">
+        <table class="display dataTable no-footer" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>实重（kg）</th>
+                    <th>计费重量（kg）</th>
+                    <th>到货日期</th>
+                    <th>提货日期</th>
+                    <th>邮政地勤费</th>
+                    <th>邮政仓租</th>
+                    <th>仓租产生原因</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>@Model.FactWeight.DecimalFormat()</td>
+                    <td>@Model.FeeWeight.DecimalFormat()</td>
+                    <td>@Model.DeliveryTime.ToStringDate()</td>
+                    <td>@Model.LoadTime.ToStringDate()</td>
+                    <td>@Model.GroundHandlingFee.DecimalFormat()</td>
+                    <td>@Model.StoreFee.DecimalFormat()</td>
+                    <td>@Model.StorageFeeReason</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </div>
+</div>
+<div class="areabx clear">
+    <div class="areabx_header">提单收入详情</div>
+      <div class="tob_box mgt15">
+    <div class="tob_box">
+        <table class="display dataTable no-footer" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>提单重量（kg）</th>
+                    <th>到货日期</th>
+                    <th>提货日期</th>
+                    <th>客户提货费</th>
+                    <th>客户仓租</th>
+                    <th>仓租产生原因</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>@loadBillInCome.BillWeight</td>
+                    <td>@loadBillInCome.DeliveryTime.ToStringDate()</td>
+                    <td>@loadBillInCome.LoadTime.ToStringDate()</td>
+                    <td>@loadBillInCome.LoadFee</td>
+                    <td>@loadBillInCome.StoreFee</td>
+                    <td>@loadBillInCome.StorageFeeReason</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </div>
+</div>

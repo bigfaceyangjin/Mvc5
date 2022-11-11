@@ -1,0 +1,489 @@
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NHibernate.config
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Site.Tests.dll.config
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Site.Tests.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Site.Tests.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Site.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Spatial.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Helpers.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Mvc.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Razor.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Optimization.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\log4net.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ProjectBase.Data.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NPOI.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NPOI.OOXML.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NHibernate.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Moq.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NPOI.OpenXml4Net.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Iesi.Collections.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Site.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Helpers.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Mvc.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Razor.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\System.Spatial.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\log4net.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ProjectBase.Data.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.pdb
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\NHibernate.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Moq.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\Iesi.Collections.xml
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\de\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\es\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\fr\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\it\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ja\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ko\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\ru\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Optimization.resources.dll
+E:\WorkSpace\wms\MSD\Site.Tests\obj\Debug\MSD.Finance.Site.Tests.csprojResolveAssemblyReference.cache
+E:\WorkSpace\wms\MSD\Site.Tests\obj\Debug\Site.Tests.dll
+E:\WorkSpace\wms\MSD\Site.Tests\obj\Debug\Site.Tests.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NHibernate.config
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Site.Tests.dll.config
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Site.Tests.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Site.Tests.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Site.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Spatial.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Helpers.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Mvc.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Razor.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Optimization.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\log4net.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ProjectBase.Data.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NPOI.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NPOI.OOXML.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NHibernate.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Moq.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NPOI.OpenXml4Net.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Iesi.Collections.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Site.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Helpers.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Mvc.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Razor.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\System.Spatial.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\log4net.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ProjectBase.Data.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.pdb
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\NHibernate.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Moq.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\Iesi.Collections.xml
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\de\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\es\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\fr\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\it\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ja\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ko\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\ru\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Optimization.resources.dll
+E:\公司项目\kjy\MSD\Site.Tests\obj\Debug\MSD.Finance.Site.Tests.csprojResolveAssemblyReference.cache
+E:\公司项目\kjy\MSD\Site.Tests\obj\Debug\Site.Tests.dll
+E:\公司项目\kjy\MSD\Site.Tests\obj\Debug\Site.Tests.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NHibernate.config
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Site.Tests.dll.config
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Site.Tests.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Site.Tests.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Site.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Spatial.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Helpers.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Mvc.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Razor.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Optimization.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\log4net.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ProjectBase.Data.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NPOI.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NPOI.OOXML.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NHibernate.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Moq.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NPOI.OpenXml4Net.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Iesi.Collections.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Site.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Helpers.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Mvc.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Razor.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\System.Spatial.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\log4net.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ProjectBase.Data.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.pdb
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\NHibernate.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Moq.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\Iesi.Collections.xml
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\de\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\es\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\fr\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\it\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ja\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ko\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\ru\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Optimization.resources.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\obj\Debug\MSD.Finance.Site.Tests.csprojResolveAssemblyReference.cache
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\obj\Debug\Site.Tests.dll
+E:\WorkSpace\新建文件夹\MSD\Site.Tests\obj\Debug\Site.Tests.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NHibernate.config
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Site.Tests.dll.config
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Site.Tests.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Site.Tests.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Site.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Spatial.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Helpers.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Mvc.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Razor.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Optimization.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\log4net.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ProjectBase.Data.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NPOI.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NPOI.OOXML.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NHibernate.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Moq.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Iesi.Collections.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Site.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Helpers.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Mvc.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Razor.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Web.Http.OData.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Data.Edm.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Data.OData.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\System.Spatial.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\MSD.Finance.Core.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\log4net.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ProjectBase.Utils.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ProjectBase.Data.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\MSD.Finance.Data.pdb
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\NHibernate.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Moq.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\Iesi.Collections.xml
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\de\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\es\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\fr\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\it\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ja\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ko\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\ru\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\bin\Debug\zh-Hans\System.Web.Optimization.resources.dll
+D:\Study\Chapter11\MSD\Site.Tests\obj\Debug\MSD.Finance.Site.Tests.csprojResolveAssemblyReference.cache
+D:\Study\Chapter11\MSD\Site.Tests\obj\Debug\Site.Tests.dll
+D:\Study\Chapter11\MSD\Site.Tests\obj\Debug\Site.Tests.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NHibernate.config
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Site.Tests.dll.config
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Site.Tests.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Site.Tests.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Data.Edm.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Data.OData.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Site.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Net.Http.Formatting.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Spatial.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Helpers.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.OData.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.WebHost.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Mvc.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Razor.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Optimization.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\MSD.Finance.Core.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\log4net.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ProjectBase.Utils.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Practices.Unity.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ProjectBase.Data.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\MSD.Finance.Data.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NPOI.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NPOI.OOXML.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NHibernate.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Moq.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NPOI.OpenXml4Net.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Iesi.Collections.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Site.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Net.Http.Formatting.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Helpers.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.WebHost.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Mvc.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Razor.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Web.Http.OData.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Data.Edm.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Data.OData.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\System.Spatial.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\MSD.Finance.Core.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\log4net.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ProjectBase.Utils.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Practices.Unity.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ProjectBase.Data.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\MSD.Finance.Data.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\NHibernate.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Moq.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\Iesi.Collections.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Helpers.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Razor.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Http.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\de\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\es\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\fr\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\it\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ja\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ko\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\ru\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\bin\Debug\zh-Hans\System.Web.Optimization.resources.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\obj\Debug\MSD.Finance.Site.Tests.csprojResolveAssemblyReference.cache
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\obj\Debug\Site.Tests.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\Site.Tests\obj\Debug\Site.Tests.pdb

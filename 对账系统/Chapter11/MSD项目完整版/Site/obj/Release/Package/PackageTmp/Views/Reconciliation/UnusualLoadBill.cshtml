@@ -1,0 +1,242 @@
+﻿@using ProjectBase.Utils;
+@using ProjectBase.Utils.Entities;
+@model Core.Filters.UnusualLoadBillFilter
+@{
+    ViewBag.Title = "提货单异常";
+    string CusName = ViewBag.CusName;
+    string UnusualLoadBillNum = ViewBag.UnusualLoadBillNum;
+    string CompletionSTime = ViewBag.CompletionSTime;
+    string CompletionETime = ViewBag.CompletionETime;
+}
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/libs/lhgdialog/lhgdialog.min.js?self=true"></script>
+<script src="~/libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script src="~/libs/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    var selectData; //选择行数据
+    $(function () {
+        var table = $("#table_local").dataTable({
+            bProcessing: true,
+            "scrollY": table_h,
+            "scrollX": $(document).width(),
+            "scrollCollapse": "true",
+            "dom": 'tr<"bottom"lip><"clear">',
+            "bServerSide": true,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            showRowNumber:true,
+            sAjaxSource: "@Url.Action("UnusualLoadBillList", "Reconciliation")",
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "CusName", "value": $("#CusName").val() },
+                    { "name": "UnusualLoadBillNum", "value": $("#UnusualLoadBillNum").val() },
+                    { "name": "CompletionSTime", "value": $("#CompletionSTime").val() },
+                    { "name": "CompletionETime", "value": $("#CompletionETime").val() },
+                    { "name": "Status", "value": $("#Status").val() },
+                    { "name": "ReconcileSTime", "value": $("#ReconcileSTime").val() },
+                    { "name": "ReconcileETime", "value": $("#ReconcileETime").val() }
+                     );
+            },
+            //跟数组下标一样，第一列从0开始，这里表格初始化时，第四列默认降序
+            "order": [[ 2, "asc" ]],
+            columns: [
+                { "data": "Index", orderable: false, width: "60"},			 				
+                { "data": "CusName" }, //客户名称
+                { "data": "LoadBillNum" },//提单号
+                { "data": "ExpressWeight", orderable: false }, //提单重量
+                { "data": "FeeWeight", orderable: false }, //提单包裹重量
+                { "data": "ExpressCount", orderable: false }, //提单包裹数量
+                { "data": "CompletionTime" }, //清关完成时间
+                { "data": "ReconcileDate" },//对账时间
+                { "data": "GroundHandlingFee", orderable: false },//邮政地勤费
+                { "data": "CostStoreFee", orderable: false },//邮政仓租
+                { "data": "InComeLoadFee", orderable: false },//客户提货费
+                { "data": "InComeStoreFee", orderable: false },//客户仓租
+                { "data": "Status", orderable: false },//异常原因
+                {
+                    "data": "ID", orderable: false, width: "160", "render": function (data, type, row, meta) {
+                        var re = "<div style='text-align:center'><a style='visibility:visible' onclick='openDetail(" + row.ID + ",\"" + row.LoadBillNum + "\")'>详情</a>&nbsp;&nbsp;";
+                        re += "<a style='visibility:visible' onclick='deleteRecord(" + data + ")'>删除</a>&nbsp;&nbsp;";
+                        if (row.Status == "@Core.LoadBillExceptionTypeEnum.ImportRepeat.ToChinese()") {
+                            re += "<a style='visibility:visible' onclick='SetNormal("+ data +")'>正常</a>";
+                        }
+                        return re + "</div>";
+                    }
+                }//操作
+            ],
+            paging: true,//分页
+            ordering: false,//是否启用排序
+            searching: true,//搜索
+            language: {
+                "sProcessing": "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+        });
+        //new $.fn.dataTable.FixedColumns(table);
+        //设置选中行样式
+        $('#table_local tbody').on('click', 'tr', function () {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+    function reloadList() {
+        var tables = $('#table_local').dataTable().api();//获取DataTables的Api，详见 http://www.datatables.net/reference/api/
+        tables.ajax.reload(function () {
+            //var json = tables.context[0].json;
+            //getTotal(json);
+        }, false);
+    }
+    //统计
+    function getTotal(json) {
+        if (json) {
+            if (json.TotalWeight) {
+                $("#spnTotalWeight").html(json.TotalWeight);
+                $("#spnTotalWayBillFee").html(json.TotalWayBillFee);
+                $("#spnTotalProcessingFee").html(json.TotalProcessingFee);
+                $("#spnTotalExpressFee").html(json.TotalExpressFee);
+                $("#spnTotalOperateFee").html(json.TotalOperateFee);
+                $("#spnSumWayBillProfit").html(json.SumWayBillProfit);
+                $("#spnSumTotalProfit").html(json.SumTotalProfit);
+            }
+        }
+    }
+    //提单对账单详细
+    function openDetail(id, loadBillNum) {
+        var url = "@Url.Action("UnusualLoadBillDetail","Reconciliation")/" + id;
+        self.parent.addTab(url, "提单对账异常明细-" + loadBillNum);
+    }
+    //删除
+    function deleteRecord(loadBillCostID) {
+        $.dialog.confirm("确定删除该记录？", function () {
+            $.ajax({
+                url: '@Url.Action("DeleteUnusualLoadBill","Reconciliation")',
+                type: 'POST',
+                data: { id: loadBillCostID },
+                success: function (data) {
+                    $.dialog.alert(data.Message);
+                    reloadList();
+                }
+            });
+        });
+    }
+    //设置正常
+    function SetNormal(loadBillCostID) {
+        $.dialog.confirm("确定该记录正常？", function () {
+            $.ajax({
+                url: '@Url.Action("SetNormal","Reconciliation")',
+                type: 'POST',
+                data: { id: loadBillCostID },
+                success: function (data) {
+                    $.dialog.alert(data.Message);
+                }
+            });
+        });
+    }
+    var DG;
+    //查看运单异常数据说明
+    function showExDataInfo() {
+        DG = $.dialog({
+            width: 520,
+            height: 260,
+            title: '异常数据说明', content: 'url:/HTML/BillExDataInfo.html', icon: 'success.gif',
+            max: false,
+            min: false,
+            lock: true,
+            close: true,
+            btnBar: false
+        });
+        DG.show();
+    }
+</script>
+<div class="areabx clear">
+    @using (Html.BeginForm("List", null, FormMethod.Get, new { @clase = "form-inline", @role = "form" }))
+    {
+            <div id="divSearch">
+            <ul class="formod">
+                <li><span style="width:100px;">客户名：</span>@Html.TextBox("CusName",Model.CusName,new { @class = "trade-time wid153" })</li>
+                <li><span style="width:64px;">提单号：</span>@Html.TextBox("UnusualLoadBillNum",Model.UnusualLoadBillNum, new { @class = "trade-time" })</li>
+                <li><span>异常原因：</span>@Html.DropDownList("Status", Html.EnumToList(typeof(Core.LoadBillExceptionTypeEnum)).Where(a => a.Text != Core.LoadBillExceptionTypeEnum.Normal.ToChinese()), new { @class="trade-time"})</li>
+            </ul>
+            <ul class="formod">
+                <li><span style="width:100px;">清关完成时间：</span>@Html.TextBox("CompletionSTime", Model.CompletionSTime, new { @class = "trade-time wid153", @onClick = "WdatePicker({maxDate:'#F{$dp.$D(\\'CompletionETime\\')}'})" })</li>
+                <li><span class="css_Span">—</span>  @Html.TextBox("CompletionETime", Model.CompletionETime, new { @class = "trade-time wid153", @onClick =  "WdatePicker({minDate:'#F{$dp.$D(\\'CompletionSTime\\')}'})"  })</li>
+                <li><span>对账时间：</span>@Html.TextBox("ReconcileSTime", "", new { @class = "trade-time wid153", @onClick = "WdatePicker({maxDate:'#F{$dp.$D(\\'ReconcileETime\\')}'})" })</li>
+                <li><span class="css_Span">—</span>  @Html.TextBox("ReconcileETime", "", new { @class = "trade-time wid153", @onClick = "WdatePicker({minDate:'#F{$dp.$D(\\'ReconcileSTime\\')}'})" })</li>
+            </ul>
+            <div class="botbtbx pdb0">
+                <input type="button" value="查询" id="btnSearch" onclick="reloadList();" class="btn btn-primary" />
+                <span class="spanMsg"><a onclick="showExDataInfo();">查看提单异常数据说明</a></span>
+            </div>
+        </div>
+    }
+    <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th rowspan="2">序号</th>
+                    <th rowspan="2">客户简称</th>
+                    <th rowspan="2">提单号</th>
+                    <th rowspan="2">提单重量(KG)</th>
+                    <th rowspan="2">提单包裹重量(KG)</th>
+                    <th rowspan="2">提单包裹数量</th>
+                    <th rowspan="2">清关完成时间</th>
+                    <th rowspan="2">对账日期</th>
+                    <th colspan="2">成本</th>
+                    <th colspan="2">收入</th>
+                    <th rowspan="2">异常原因</th>
+                    <th rowspan="2">操作</th>
+                </tr>
+                <tr>
+                    <th>邮政地勤费</th>
+                    <th>邮政仓租</th>
+                    <th>客户提货费</th>
+                    <th>客户仓租</th>
+                </tr>
+            </thead>
+            @*<tfoot>
+                <tr>
+                    <td>总计</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span id="spnTotalWeight"></span></td>
+                    <td><span id="spnTotalWayBillFee"></span></td>
+                    <td><span id="spnTotalProcessingFee"></span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span id="spnTotalExpressFee"></span></td>
+                    <td><span id="spnTotalOperateFee"></span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span id="spnSumWayBillProfit"></span></td>
+                    <td><span id="spnSumTotalProfit"></span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>*@
+        </table>
+    </div>
+</div>

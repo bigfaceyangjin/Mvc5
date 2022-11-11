@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightSynchro", "FreightSynchro\FreightSynchro.csproj", "{A88B69C5-D57C-4DE3-9836-532B47D16644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSynchro", "TestingSynchro\TestingSynchro.csproj", "{F40D7EDD-69EB-4380-8F60-E674CF42179E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A88B69C5-D57C-4DE3-9836-532B47D16644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88B69C5-D57C-4DE3-9836-532B47D16644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88B69C5-D57C-4DE3-9836-532B47D16644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88B69C5-D57C-4DE3-9836-532B47D16644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40D7EDD-69EB-4380-8F60-E674CF42179E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40D7EDD-69EB-4380-8F60-E674CF42179E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40D7EDD-69EB-4380-8F60-E674CF42179E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40D7EDD-69EB-4380-8F60-E674CF42179E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,132 @@
+﻿@{
+    ViewBag.Title = "Currency";
+}
+<link href="~/Libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/Libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script type="text/javascript">
+    //弹出框  
+    var dg;
+    var w = 424, h = 320; //宽，高  
+    //添加记录
+    function showPublishWin() {
+        dg = new $.dialog({
+            id: "AddCurrency",
+            title: "添加币种",
+            content: "url:/BaseDate/CurrencyAdd",
+            width: w,
+            height: h,
+            max: false,
+            min: false,
+            lock: true,
+            close: true,
+            cancel: true, //X按钮是否显示，如果设置了回调函数，一定会显示  
+            //cancel: controlAllBtn,  
+            ok: successFun //点击确定执行的回调函数
+        });
+        dg.show();
+    }
+    //弹出框 确认回调
+    function successFun() {
+        this.content.document.forms["from1"].submit();
+        $.dialog.alert("添加成功！");
+    }
+    $(function () {
+        $('#table_local tbody').on('click', 'tr', function () {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        var h = $(document).height() - 258;
+        $("#table_local").dataTable({
+            //"iDisplayLength": 10,//每页显示10条数据
+            //这里也可以设置分页，但是不能设置具体内容，只能是一维或二维数组的方式，所以推荐下面language里面的写法。
+            //"aLengthMenu": [[10, 15, 20, 25, 50, -1], [10, 15, 20, 25, 50, "All"]],
+            bProcessing: true,
+            //"dom": 'i,p',//l - Length changing  选择每页显示行数下拉框的控件 f - Filtering input  搜索过滤控件t - The Tabletools    导出excel，csv的按钮
+            //i - Information  显示汇总信息（从 1 到 100 /共 1,288 条数据） p - Pagination   分页控件 r - pRocessing   显示加载时的进度条 C - copy 显示复制，excel的控件
+            //ajax: "/Controller/Action",
+            "scrollY": h,
+            "scrollCollapse": "true",
+            "dom": 'tr<"bottom"lip><"clear">',
+            "bServerSide": false,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            sAjaxSource: "@Url.Action("CurrencyList", "BaseDate")",
+            "fnServerParams": function (aoData) {  //查询条件
+                aoData.push(
+                    { "name": "FullName", "value": $("#FullName").val() },
+                    { "name": "ShortName", "value": $("#ShortName").val() }
+                    );
+            },
+            columns: [
+               {
+                   title: "1",
+                   "visible": false,
+                   "data": "ID"
+               },
+               { "data": "FullName", title: "全称" },
+               { "data": "ShortName", title: "简称" },
+               { "data": "ExchangeRate", title: "汇率" },
+               { "data": "Symbol", title: "符号" },
+               { "data": "CreateUser", title: "创建用户" },
+               { "data": "CreateTime", title: "创建时间" },
+               {
+                   "data": "ID", orderable: false, title: "操作", "render": function (data, type, row, meta) { //自定义列
+                       return "<a style='visibility:visible' >修改</a> <a style='visibility:visible' >删除</a>";
+                   }
+               }
+            ],
+            paging: true,//分页
+            ordering: true,//是否启用排序
+            searching: false,//搜索
+            language: {
+                "sProcessing": "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+
+        });
+        //$("#table_local_filter input[type=search]").css({ width: "auto" });//右上角的默认搜索文本框，不写这个就超出去了。
+    });
+</script>
+<div class="areabx clear">
+    @using (Html.BeginForm("List", null, FormMethod.Get, new { @clase = "form-inline", @role = "form" }))
+    {
+        <div class="areabx_header">币种管理</div>
+        <ul class="formod">
+            <li><span>全称：</span>@Html.TextBox("FullName", "", new { @class = "trade-time wid153" })</li>
+            <li><span>简称：</span>@Html.TextBox("ShortName", "", new { @class = "trade-time" })</li>
+            @*    <li><span>地址信息：</span>@Html.TextBox("AreaCountryName", "",new {@class="trade-time" })</li>*@
+        </ul>
+        <div class="botbtbx pdb0">
+            <input type="button" value="添加币种" class="btn btn-primary" onclick="showPublishWin()" />
+            <input type="button" value="查询" onclick="reloadList();" class="btn btn-primary">
+        </div>
+    }
+    <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+        </table>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "费用导入";
+}
+<link href="~/libs/uploadify/uploadify.css" rel="stylesheet" />
+<script src="~/libs/lhgdialog/lhgdialog.min.js?self=true"></script>
+<script src="~/libs/uploadify/jquery.uploadify-3.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //运单
+        $("#file_BillFeeupload").uploadify({
+            //指定swf文件
+            'swf': '@Url.Content("~/libs/uploadify/uploadify.swf")',
+            //后台处理的页面
+            'uploader': '@Url.Action("FeeUpload","Reconciliation")',
+            //按钮显示的文字
+            'buttonText': '浏 览...',
+            //显示的高度和宽度，默认 height 30；width 120
+            //'height': 15,
+            //'width': 80,
+            //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+            //在浏览窗口底部的文件类型下拉菜单中显示的文本
+            'fileTypeDesc': 'All Files',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.xls;*.xlsx',
+            //发送给后台的其他参数通过formData指定
+            //'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+            //上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+            //'queueID': 'fileQueue',
+            //选择文件后自动上传
+            'auto': false,
+            //设置为true将允许多文件上传
+            'multi': false,
+            'onUploadSuccess': function (file, data, response) {
+                var a = jQuery.parseJSON(data);
+                if (a.Success) {
+                    $.dialog.alert(a.Message);
+                }
+                else {
+                    $.dialog.alert("导入提单成本费用异常：" + a.Message);
+                }
+            }//,
+            //'formData': { '.ASPXAUTH': '' }
+        });
+    });
+</script>
+<div class="areabx clear">
+    <div class="areabx_header">其它费用导入 <span class="uploadSpan"><a  href="~/Uploads/提单其他费用模板.xlsx">下载提单收入费用模板</a></span></div>
+</div>
+<div style="margin-top: 10px;">
+    @*用来作为文件队列区域*@
+    <div id="fileQueueOrder"></div>
+    <input type="file" id="file_BillFeeupload" name="file_BillFeeupload" />
+    <h2><a href="javascript:$('#file_BillFeeupload').uploadify('upload','*')">开始上传</a></h2>
+</div>

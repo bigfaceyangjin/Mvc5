@@ -1,0 +1,192 @@
+﻿<style type="text/css">
+    .bottom {
+        width: 796px;
+    }
+    #table_local_wrapper {
+        width: 794px;
+    }
+    html,body{overflow-x:hidden;}
+    .dataTables_wrapper .dataTables_filter {
+        float:left;
+    }
+</style>
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<script src="~/libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/libs/lhgdialog/lhgdialog.min.js?self=true"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script type="text/javascript">
+    //单个匹配
+    function checkSelect(deliveryId) {
+        var customerId = $("#customerId").val();
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("AddMatching", "Customer")',
+            data: { customerId: customerId, deliveryId: deliveryId },
+            success: function (data) {
+                frameElement.api.opener.hidePublishWin(data.Msg, data.Result);
+            }
+        });
+    }
+    //批量匹配
+    function checkSelectList() {
+        var customerId = $("#customerId").val();
+        var nTrs = table.fnGetNodes();//fnGetNodes获取表格所有行，nTrs[i]表示第i行tr对象
+        var row;
+        //var DID = new Array();
+        var strdid='';
+        var selectCounts = 0;
+        for (var i = 0; i < nTrs.length; i++) {
+            if ($(nTrs[i])[0].cells[0].children[0].checked) {
+                row = table.fnGetData(nTrs[i]);//fnGetData获取一行的数据        
+                selectCounts++;
+                strdid += "" + row.ID + ",";
+            }
+        }
+        strdid = strdid.substring(0, strdid.length - 1);
+        if (selectCounts < 1) {
+            $.dialog.alert("请先选择数据行！");
+            return false;
+        } 
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("AddMatchingList", "Customer")',
+            data: { 'customerId': customerId, 'ListID': strdid },
+            dataType: 'json',
+            success: function (data) {
+                frameElement.api.opener.hidePublishWin(data.Msg, data.Result);
+            }
+        });
+    }
+    var table;
+    $(function () {
+        @*    $("#table_local").dataTable({
+            bProcessing: true,
+            "scrollY": table_h,
+            "scrollX": $(document).width(),
+            "scrollCollapse": "true",
+            "dom": 'ftr<"bottom"lip><"clear">',
+            "scrollY": 400,
+            "scrollCollapse": "true",
+            "bServerSide": false,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            showRowNumber: true,
+            sAjaxSource: "@Url.Action("DeliveryList", "Customer")",
+            columns: [
+               { title: "1", "visible": false, "data": "ID" },          
+               { "data": "DeliveryName", title: "收货商名称" },
+               { "data": "AccountName", title: "账户名称" },
+               {
+                   "data": "ID", orderable: false, title: "操作", width: "140", "render": function (data, type, row, meta) { //自定义列
+                       var re = "<div style='text-align:center'><a style='visibility:visible' onclick='checkSelect(" + data + ")'>选择</a></div>";
+                       return re;
+                   }
+               }
+            ],
+            paging: true,//分页
+            ordering: true,//是否启用排序
+            searching: true,//搜索
+            language: {
+                "sProcessing": "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+
+        });*@
+
+        table = $("#table_local").dataTable({
+            bProcessing: true,
+            //"scrollY": table_h,
+            //"scrollX": $(document).width(),
+            "scrollCollapse": "true",
+            "dom": 'ftr<"bottom"lip><"clear">',
+            "scrollY": 400,
+            "scrollCollapse": "true",
+            "bServerSide": false,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            showRowNumber: true,
+            sAjaxSource: "@Url.Action("DeliveryList", "Customer")",
+            columns: [
+               //{ "data": "ID", "visible": false },
+               {
+                   "data": "ID", orderable: false, width: "60",
+                   "render": function (data, type, row, meta) {
+                       return " <input id='cbx" + data + "' type='checkbox' onclick='controlSelectAll(" + data + ")' class='cbx' value='" + data + "'/>  "
+                   }
+               },
+               { "data": "DeliveryName" },
+               { "data": "AccountName" },
+               {
+                   "data": "ID", orderable: false, width: "140", "render": function (data, type, row, meta) { //自定义列
+                       var re = "<div style='text-align:center'><a style='visibility:visible' onclick='checkSelect(" + data + ")'>选择</a></div>";
+                       return re;
+                   }
+               }
+            ],
+            //跟数组下标一样，第一列从0开始，这里表格初始化时，第四列默认降序
+            "order": [[1, "asc"]],
+            paging: true,//分页
+            ordering: true,//是否启用排序
+            searching: true,//搜索
+            language: {
+                "sProcessing": "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+        });
+    });
+    //查询 刷新
+    function reloadList() {
+        var tables = $('#table_local').dataTable().api();//获取DataTables的Api，详见 http://www.datatables.net/reference/api/
+        tables.ajax.reload();
+    }
+</script>
+<div class="botbtbx pdb0" style="padding-left:2px;">
+    <input type="button" id="btnAddMatchingList" value="批量选择匹配" onclick="checkSelectList()" class="btn btn-primary"/>
+</div>
+<div class="areabx clear">
+    @*   <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 794px;">
+        </table>
+    </div>*@
+    <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>
+                        <input type='checkbox' id='chkAllColl' onclick='selectAll()' />全选</th>
+                    <th>收货商名称</th>
+                    <th>账户名称</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<input type="hidden" id="customerId" value="@ViewBag.CustomerId" />

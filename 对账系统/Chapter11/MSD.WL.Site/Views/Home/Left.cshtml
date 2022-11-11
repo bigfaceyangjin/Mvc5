@@ -1,0 +1,111 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <link href="~/Content/sharestyle.css" rel="stylesheet" /> 
+    <style type="text/css">
+      .hightCss
+        {
+            color: yellow;
+        }
+    </style>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+        //显示菜单下面的选项
+        function ShowMenuList(id) {
+            var objectobj = document.getElementById(id);
+            var dtObj = document.getElementById("dt_" + id);
+            if (objectobj.style.display == "none") {
+                objectobj.style.display = "";
+                dtObj.setAttribute("class", "head2");
+                //其它菜单折叠
+                $(dtObj).parent().parent().find("dt").not(dtObj).attr("class", "head1"); //折叠
+                $(objectobj).parent().parent().find("ul").not(objectobj).css("display", "none"); //隐藏菜单子项
+            }
+            else {
+                objectobj.style.display = "none";
+                dtObj.setAttribute("class", "head1");
+            }
+        }
+        //控制菜单模块的显示和隐藏
+        function showDivMenu(divId) {
+            $("#" + divId).css("visibility", "visible");
+            $("#" + divId).siblings("div").css("visibility", "hidden");
+        }
+        $(function () {
+            $(".box_n li a").click(function () {
+                $(".box_n li a").removeClass("nav_sub");
+                $(this).addClass("nav_sub");
+            });
+        });
+        function goNewPage(url, name) {
+            self.parent.frames["mainFrame"].addTab(url, name);
+        }
+    </script>
+</head>
+<body>
+ <div class="leftbar" id="divOrder">
+  <dl>
+    <dt class="head2" id="dt_ulOrder" onclick='ShowMenuList("ulOrder")'>订单管理</dt>
+    <ul class="box_n" id="ulOrder">
+      <li><a href="#">批量新建订单</a></li>
+      <li><a href="#">手工新建订单</a></li>
+      <li><a class="nav_sub" href="#">订单草稿<span>（3）</span></a></li>
+      <li><a href="#">已确认订单<span>（3）</span></a></li>
+      <li><a href="#">待发货订单<span>（3）</span></a></li>
+      <li><a href="#">已发货订单<span>（0）</span></a></li>
+      <li><a href="#">订单回收站<span>（0）</span></a></li>
+      <li><a href="#">退件<span>（0）</span></a></li>
+      <li><a href="#">批量修改订单</a></li>
+    </ul>
+  </dl>
+  <dl>
+    <dt class="head1" id="dt_ulLading" onclick='ShowMenuList("ulLading")'>提单管理</dt>
+    <ul class="box_n" id="ulLading" style="display:none;" >
+      <li><a href="#">创建托盘</a></li>
+      <li><a href="#">未交货托盘<span>（6）</span></a></li>
+      <li><a href="#">已交货托盘</a></li>
+      <li><a href="#">创建交货单</a></li>
+      <li><a href="#">交货单列表</a></li>
+      <li><a href="#">待预扣提单<span>（3）</span></a></li>
+      <li><a href="#">已预扣提单</a></li>
+    </ul>
+  </dl>
+  <dl>
+    <dt class="head1" id="dt_ulIdentityCard" onclick='ShowMenuList("ulIdentityCard")'>身份证管理</dt>
+    <ul class="box_n" id="ulIdentityCard" style="display:none;" >
+      <li><a href="#">待验证身份证<span>（3）</span></a></li>
+      <li><a href="#">无需验证身份证<span>（3）</span></a></li>
+      <li><a href="#">已验证身份证<span>（3）</span></a></li>
+    </ul>
+  </dl>
+</div>
+ <div class="leftbar" id="divSysManage"></div>
+     <div class="leftbar" id="divFinancial">
+        <dl>
+            <dt id="dt_ulChannel" class="head2" onclick='ShowMenuList("ulChannel")'>渠道费用管理</dt>
+            <ul class="box_n" id="ulChannel">
+                <li><a href="#" onclick="goNewPage('a.html','渠道分类');">渠道分类</a></li>
+                <li><a target="mainFrame" id="channelManage" onclick="goNewPage('/Channel/Index','渠道管理');">渠道管理</a></li>
+                <li><a href="#">分区管理</a></li>
+                <li><a href="#">价格管理</a></li>
+            </ul>
+        </dl>
+        <dl>
+            <dt id="dt_ulFinancial" class="head1" onclick='ShowMenuList("ulFinancial")'>财务管理</dt>
+            <ul class="box_n" id="ulFinancial" style="display: none;">
+                <li><a href="#">财务流水</a></li>
+                <li><a href="#">提单对账</a></li>
+                <li><a href="#">运单对账</a></li>
+                <li><a href="#">异常费用对账</a></li>
+                <li><a href="#">充值记录</a></li>
+            </ul>
+        </dl>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains job definitions in schema version 2.0 format -->
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+  <schedule>
+    <!--作业1 收货商数据同步-->
+    <job>
+      <name>CustomerJob</name>
+      <group>normalJobGroup</group>
+      <description>同步收货商作业</description>
+      <job-type>B2CSynchro.Jobs.ExpressCurInfoJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <!--作业2 提货单数据同步-->
+    <job>
+      <name>LoadBillJob</name>
+      <group>normalJobGroup</group>
+      <description>同步提货单作业</description>
+      <job-type>B2CSynchro.Jobs.LoadBillJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <!--作业3 运单数据同步-->
+    <job>
+      <name>WayBillJob</name>
+      <group>normalJobGroup</group>
+      <description>同步运单作业</description>
+      <job-type>B2CSynchro.Jobs.WayBillJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <!--作业4 读取运单成本数据-->
+    <job>
+      <name>OrderCostJob</name>
+      <group>normalJobGroup</group>
+      <description>同步运单成本作业</description>
+      <job-type>B2CSynchro.Jobs.OrderCostJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <!--作业5 读取提单成本数据-->
+    <job>
+      <name>BillCostJob</name>
+      <group>normalJobGroup</group>
+      <description>同步提单成本作业</description>
+      <job-type>B2CSynchro.Jobs.BillCostJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+
+    <!--作业6 同步提单收入仓租信息数据-->
+    <job>
+      <name>BillWarehouseJob</name>
+      <group>normalJobGroup</group>
+      <description>同步提单收入仓租信息数据</description>
+      <job-type>B2CSynchro.Jobs.BillWarehouseJob,B2CSynchro</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+
+    <!--定义作业1 触发器 每10分钟执行一次收货商数据同步作业-->
+    <trigger>
+      <cron>
+        <name>CustomerTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>CustomerJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <!--定义作业2 触发器 每个整时执行一次提货单数据同步作业-->
+    <trigger>
+      <cron>
+        <name>LoadBillTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>LoadBillJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <!--定义作业3 触发器 每1小时执行一次运单数据同步作业-->
+    <trigger>
+      <cron>
+        <name>WayBillTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>WayBillJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 21 * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <!--定义作业4 触发器 读取运单成本数据3小时一次-->
+    <trigger>
+      <cron>
+        <name>OrderCostTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>OrderCostJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 0/3 * * ?</cron-expression>
+      </cron>
+    </trigger>
+    <!--定义作业5 触发器 读取提单成本数据3小时一次-->
+    <trigger>
+      <cron>
+        <name>BillCostTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>BillCostJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 0/3 * * ?</cron-expression>
+      </cron>
+    </trigger>
+
+
+    <!--定义作业6 同步提单收入仓租信息数据 3小时一次-->
+    <trigger>
+      <cron>
+        <name>BillWarehouseTrigger</name>
+        <group>normalTriggerGroup</group>
+        <job-name>BillWarehouseJob</job-name>
+        <job-group>normalJobGroup</job-group>
+        <cron-expression>0 0 0/3 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </schedule>
+</job-scheduling-data>
