@@ -1,0 +1,164 @@
+2022-11-09 22:29:51,988 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-09 22:29:52,042 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-09 22:29:53,593 [5] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,594 [5] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,639 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,639 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,645 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,645 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,648 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,648 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,653 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,653 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,657 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,657 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,661 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,661 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,664 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,664 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,667 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,667 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,671 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,671 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,675 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,675 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,679 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,679 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,683 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,683 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,686 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,687 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,690 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,690 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,693 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,694 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,697 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,697 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,700 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,700 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,704 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,705 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:53,709 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-09 22:29:53,709 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,746 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,747 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,750 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,751 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,755 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,755 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,758 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,759 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,762 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,762 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,766 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,766 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,769 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,769 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,772 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,772 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,775 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,775 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,778 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,778 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,781 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,781 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,784 [5] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,784 [5] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,787 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,787 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,789 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,791 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,793 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,794 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,797 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,797 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,800 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,801 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,804 [5] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,804 [5] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,808 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,809 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:54,813 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:54,813 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,832 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,833 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,840 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,841 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,863 [5] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,864 [5] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,875 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,875 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,878 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,879 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,882 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,882 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,886 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,886 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,889 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,890 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,893 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,894 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,896 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,897 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,900 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,901 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,904 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,904 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,907 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,908 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,915 [5] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,916 [5] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,919 [13] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,920 [13] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,923 [15] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,923 [15] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,927 [12] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,927 [12] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,930 [11] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,930 [11] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,934 [10] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,934 [10] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:29:59,937 [14] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-09 22:29:59,938 [14] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-09 22:31:07,161 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-09 22:31:07,176 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动

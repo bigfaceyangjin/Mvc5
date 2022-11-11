@@ -29,3 +29,5 @@ E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.Service\obj\Debug\Eonup.Wcf.Service.cs
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.Service\obj\Debug\Eonup.Wcf.Service.csproj.CopyComplete
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.Service\obj\Debug\Eonup.Wcf.Service.dll
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.Service\obj\Debug\Eonup.Wcf.Service.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.Service\bin\Debug\Newtonsoft.Json.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.Service\bin\Debug\Newtonsoft.Json.xml

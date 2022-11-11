@@ -178,6 +178,7 @@
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\FourController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PipeController.cs" />
     <Compile Include="Controllers\SecondController.cs" />
     <Compile Include="Controllers\SevenController.cs" />
     <Compile Include="Controllers\SixController.cs" />
@@ -189,7 +190,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CurrentUser.cs" />
+    <Compile Include="Models\SysEvent.cs" />
     <Compile Include="Models\XmlUser.cs" />
+    <Compile Include="PipeLine\CustomeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\MD5Encrypt.cs" />
     <Compile Include="Utility\RemarkAttribute.cs" />
@@ -290,6 +293,8 @@
     <Content Include="Views\Seven\ViewException.cshtml" />
     <Content Include="Views\Shared\Error_404.cshtml" />
     <Content Include="Views\Seven\ActionTest.cshtml" />
+    <Content Include="Views\Pipe\PipeModel.cshtml" />
+    <Content Include="Views\Pipe\Handler.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

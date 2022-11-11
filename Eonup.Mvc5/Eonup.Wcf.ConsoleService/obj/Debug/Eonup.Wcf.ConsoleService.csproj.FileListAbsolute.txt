@@ -26,3 +26,17 @@ E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.Con
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.csproj.CopyComplete
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.exe
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.ConsoleService.exe.config
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.ConsoleService.exe
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.ConsoleService.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.Service.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.Interface.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Newtonsoft.Json.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.Service.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Eonup.Wcf.Interface.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\bin\Debug\Newtonsoft.Json.xml
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.csprojAssemblyReference.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.csproj.CoreCompileInputs.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.csproj.CopyComplete
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.exe
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Wcf.ConsoleService\obj\Debug\Eonup.Wcf.ConsoleService.pdb

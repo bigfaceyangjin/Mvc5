@@ -10,3 +10,8 @@ E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.In
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.dll
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.pdb
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csprojAssemblyReference.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Remote.Interface\bin\Debug\Eonup.Remote.Interface.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.csproj.CoreCompileInputs.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Remote.Interface\obj\Debug\Eonup.Remote.Interface.pdb

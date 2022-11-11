@@ -1,0 +1,22 @@
+﻿@using Eonup.Mvc5.Models;
+@model IEnumerable<SysEvent>
+@{
+    ViewBag.Title = "PipeModel";
+}
+
+<h2>PipeModel</h2>
+<table class="table">
+    <tr>
+        <td>序号</td>
+        <td>管道名称</td>
+        <td>管道类型</td>
+    </tr>
+        @foreach (SysEvent s in Model)
+        {
+        <tr>
+            <td>@s.id</td>
+            <td>@s.Name</td>
+            <td>@s.TypeName</td>
+        </tr>
+        }
+</table>

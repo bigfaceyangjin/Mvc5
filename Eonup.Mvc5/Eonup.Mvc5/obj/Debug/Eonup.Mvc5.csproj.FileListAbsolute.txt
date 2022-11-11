@@ -682,3 +682,16 @@ E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Mvc5\obj\Debug\Eonup.Mvc5.dll
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Mvc5\obj\Debug\Eonup.Mvc5.pdb
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Model.dll
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Model.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Interface.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Model.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Service.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\PagedList.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\PagedList.Mvc.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Unity.Interception.Configuration.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Interface.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Model.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Service.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Eonup.Remote.Service.dll.config
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\PagedList.xml
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\PagedList.Mvc.xml
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Mvc5\bin\Unity.Interception.Configuration.pdb

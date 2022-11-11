@@ -389,3 +389,6 @@ E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Framework\obj\Debug\Eonup.Framework.csproj
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Framework\obj\Debug\Eonup.Framework.dll
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Framework\obj\Debug\Eonup.Framework.pdb
 E:\WorkSpace\C#\Mvc5\Eonup.Mvc5\Eonup.Framework\obj\Debug\Eonup.Framework.csprojAssemblyReference.cache
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Framework\bin\Debug\Unity.Interception.Configuration.dll
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Framework\bin\Debug\Unity.Interception.Configuration.pdb
+D:\朱展\Work\MVC5\Eonup.Mvc5\Eonup.Framework\obj\Debug\Eonup.Framework.csprojAssemblyReference.cache

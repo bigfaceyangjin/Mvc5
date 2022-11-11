@@ -1,0 +1,221 @@
+2022-11-07 09:59:44,212 [108] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 09:59:44,239 [108] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:01:09,482 [23] ERROR Eonup.Mvc5.Filter.CusHandleErrorAttribute - 访问http://localhost:6099/Six/AjaxLogin 异常 原因:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+2022-11-07 10:01:09,526 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,541 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-07 10:01:09,542 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,550 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-07 10:01:09,550 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,556 [89] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Resolution failed with error: 调用的目标发生了异常。
+
+For more detailed information run Unity in debug mode: new UnityContainer().AddExtension(new Diagnostic())
+2022-11-07 10:01:09,556 [89] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,561 [36] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,562 [36] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,566 [110] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,567 [110] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,571 [112] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,571 [112] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,577 [21] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,578 [21] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,582 [104] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,582 [104] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,587 [115] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,588 [115] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,592 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,593 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,597 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,597 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,600 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,600 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,604 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,604 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,608 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,608 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,613 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,614 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,618 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,619 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,623 [89] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,624 [89] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,628 [110] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,629 [110] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:09,633 [112] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:09,633 [112] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,687 [21] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,688 [21] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,693 [104] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,694 [104] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,699 [115] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,700 [115] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,705 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,706 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,711 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,711 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,718 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,719 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,723 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,724 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,729 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,729 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,734 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,735 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,739 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,740 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,746 [36] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,746 [36] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,750 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,750 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,756 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,756 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,760 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,760 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,764 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,765 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,770 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,770 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,775 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,776 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,780 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,781 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,786 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,788 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:10,793 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:10,795 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,809 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,809 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,814 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,814 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,819 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,820 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,824 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,825 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,828 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,829 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,833 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,833 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,839 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,840 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,843 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,843 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,848 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,848 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,852 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,854 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,857 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,858 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,861 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,862 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,866 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,867 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,871 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,871 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,874 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,874 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,879 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,880 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,883 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,885 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,888 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,890 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,894 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,895 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:15,900 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:15,901 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,928 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,928 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,933 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,934 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,940 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,941 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,944 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,945 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,949 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,950 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,953 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,955 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,958 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,959 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,964 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,964 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,968 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,968 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,972 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,973 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,975 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,976 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,979 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,980 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,984 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,985 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,989 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,990 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,993 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,993 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:45,998 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:45,999 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:46,003 [105] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:46,004 [105] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:46,008 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:46,009 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:46,013 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:46,014 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:01:46,018 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:01:46,019 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,042 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,042 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,047 [85] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,048 [85] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,052 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,052 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,056 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,056 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,060 [79] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,060 [79] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,065 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,065 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,069 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,069 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,074 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,074 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,077 [82] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,078 [82] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,081 [77] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,082 [77] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,085 [114] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,085 [114] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,089 [23] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,089 [23] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,093 [85] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,093 [85] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,097 [22] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,097 [22] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,100 [107] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,101 [107] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,105 [79] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,105 [79] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,109 [74] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,110 [74] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,113 [31] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,114 [31] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,117 [97] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,118 [97] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:46,121 [111] ERROR Eonup.Mvc5.MvcApplication - http://localhost:6099/Home/Error404:Controller Exception
+2022-11-07 10:02:46,122 [111] ERROR Eonup.Mvc5.MvcApplication - Application_Error
+2022-11-07 10:02:59,011 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:02:59,240 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:04:46,906 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:04:47,137 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:10:21,134 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:10:21,265 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:12:32,057 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:12:32,305 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:14:21,525 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:14:21,755 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:16:25,187 [1] INFO  Eonup.Framework.Log4.Logger - 系统初始化Log4Net
+2022-11-07 10:16:25,325 [1] INFO  Eonup.Mvc5.MvcApplication - 网站第一次启动
+2022-11-07 10:17:44,594 [16] INFO  Eonup.Mvc5.Filter.CusAuthorize - Eleven 访问 http://localhost:6099/Fifth/Index
