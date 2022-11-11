@@ -1,0 +1,26 @@
+﻿ html, body {
+        overflow:hidden;
+    }
+    div {
+        margin:5px;
+    }
+    .divRow {
+     white-space:normal;word-break:break-all; 
+    }
+    span { 
+ font-weight:bold;
+ }
+    .popbtn1 {
+    background: rgba(0, 0, 0, 0) url("../images/icon_20.png") repeat-x scroll 0 0;
+    border: 1px solid #1979bd;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 25px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.mg {
+    display: inline-block;
+    margin: 10px 0 10px 208px !important;
+}

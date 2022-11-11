@@ -1,0 +1,2 @@
+﻿2015-06-19 08:43:47,901 INFO  WayBillLog  - 任务名:“WayBillJob”,唯一标识符:“23074dfe-f0f0-46fb-b157-3381a0873c9e”开始运行
+2015-06-19 08:44:27,009 INFO  WayBillLog  - 任务名:“WayBillJob”,唯一标识符:“23074dfe-f0f0-46fb-b157-3381a0873c9e”运行完毕,共获取0条数据

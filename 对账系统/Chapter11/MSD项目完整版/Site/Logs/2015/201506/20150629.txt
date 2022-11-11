@@ -1,0 +1,154 @@
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-29 11:49:52,962 [76] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+GROUP_CONCAT(e.ExceptionMsg) AS ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By  w.PostingTime desc  GROUP BY w.ID limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-29 11:49:52,994 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:49:52,995 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:49:52,996 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:50:03,563 [76] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+GROUP_CONCAT(e.ExceptionMsg) AS ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By  w.PostingTime desc  GROUP BY w.ID limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-29 11:50:03,563 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:50:03,563 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:50:03,563 [76] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+----------------------header--------------------------
+2015-06-29 11:51:19,658 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+GROUP_CONCAT(e.ExceptionMsg) AS ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1   Order By  w.PostingTime desc  GROUP BY w.ID limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-29 11:51:19,716 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:51:19,767 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 11:51:19,768 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 12:13:39,913 [26] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+GROUP_CONCAT(e.ExceptionMsg) AS ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1   Order By  w.PostingTime desc  GROUP BY w.ID limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-29 12:13:39,913 [26] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 12:13:39,913 [26] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+2015-06-29 12:13:39,913 [26] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY w.ID limit 50' at line 19
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-29 12:27:19,072 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2015-06-29 12:27:19,078 [9] ERROR NHibernate.Util.ADOExceptionReporter - 正在中止线程。
+2015-06-29 12:27:19,089 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2015-06-29 12:27:19,089 [9] ERROR NHibernate.Util.ADOExceptionReporter - 正在中止线程。
+2015-06-29 12:27:19,090 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2015-06-29 12:27:19,090 [9] ERROR NHibernate.Util.ADOExceptionReporter - 正在中止线程。
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------

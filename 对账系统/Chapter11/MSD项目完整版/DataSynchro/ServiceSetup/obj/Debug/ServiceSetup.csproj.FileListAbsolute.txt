@@ -1,0 +1,17 @@
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.exe.config
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.exe
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.pdb
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.FrmServiceSetup.resources
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.Properties.Resources.resources
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.csproj.GenerateResource.Cache
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.exe
+E:\WorkSpace\wms\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.pdb
+E:\WorkSpace\笔记本迁移\MSD\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.exe.config
+E:\WorkSpace\笔记本迁移\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.exe
+E:\WorkSpace\笔记本迁移\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.pdb
+D:\Study\Chapter11\MSD\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.exe.config
+D:\Study\Chapter11\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.exe
+D:\Study\Chapter11\MSD\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\DataSynchro\ServiceSetup\bin\Debug\ServiceSetup.exe.config
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.exe
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\DataSynchro\ServiceSetup\obj\Debug\ServiceSetup.pdb

@@ -1,0 +1,58 @@
+﻿@model Core.BaseData.Currency
+<style type="text/css">
+    body {
+        overflow: hidden;
+    }
+</style>
+<script type="text/javascript">
+    function Ok() {
+        //document.getElementById("form1").submit();
+
+        alert("这里有子页面");
+
+        return false;
+    }
+</script>
+
+<div class="areabx clear">
+    <div class="areabx_header">@ViewBag.Title</div>
+    <div class="tian_xi">
+        @using (Html.BeginForm("CurrencyAdd", "BaseDate", FormMethod.Post, new { @clase = "form-inline", @role = "form", name = "from1" }))
+        {
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr style="height: 40px;">
+                        <td style="width: 120px; text-align: right;">全称：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.FullName, new { @class = "trade-timen" })<span class="wtps">*</span></td>
+                            @Html.HiddenFor(x => x.ID)
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">简称：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.ShortName, new { @class = "trade-timen" })<span class="wtps">*</span></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">汇率：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.ExchangeRate, new { @class = "trade-timen" })<span class="wtps">*</span></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">符号：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.Symbol, new { @class = "trade-timen" })<span class="wtps">*</span></td>
+                    </tr>                
+                    <tr style="height: 40px;">
+                        <td align="right">是否默认：</td>
+                        <td>是 @Html.RadioButtonFor(x => x.IsDefault, "是") <span class="radioMagin">否 @Html.RadioButtonFor(x => x.IsDefault, "否")</span><span class="wtps">*</span></td>
+                    </tr>
+                    @*              <tr style="height: 60px;">
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="submit" value="添加渠道" class="btsty4 nut"></td>
+                </tr>*@
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

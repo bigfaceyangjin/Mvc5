@@ -1,0 +1,75 @@
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.pdb
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\log4net.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\Moq.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\NPOI.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\NPOI.OOXML.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\System.Web.Mvc.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\log4net.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\Moq.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\System.Web.Mvc.xml
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\wms\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.pdb
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.pdb
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\log4net.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\Moq.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\NPOI.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\NPOI.OOXML.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\log4net.xml
+E:\公司项目\kjy\MSD\ProjectBase.Utils\bin\Debug\Moq.xml
+E:\公司项目\kjy\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.csprojResolveAssemblyReference.cache
+E:\公司项目\kjy\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.dll
+E:\公司项目\kjy\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.pdb
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.pdb
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\log4net.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\Moq.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\NPOI.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\NPOI.OOXML.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\log4net.xml
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\bin\Debug\Moq.xml
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.csprojResolveAssemblyReference.cache
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.dll
+E:\WorkSpace\新建文件夹\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.pdb
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.pdb
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\log4net.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\Moq.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\NPOI.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\NPOI.OOXML.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\System.Web.Mvc.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\log4net.xml
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\Moq.xml
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\System.Web.Mvc.xml
+D:\Study\Chapter11\MSD\ProjectBase.Utils\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.csprojResolveAssemblyReference.cache
+D:\Study\Chapter11\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.dll
+D:\Study\Chapter11\MSD\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\ProjectBase.Utils.pdb
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\log4net.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\Moq.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\NPOI.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\NPOI.OOXML.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\log4net.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\bin\Debug\Moq.xml
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.csprojResolveAssemblyReference.cache
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.dll
+D:\大学课程\MVC\ASP.NET MVC企业实战源码\Chapter11\MSD项目完整版\ProjectBase.Utils\obj\Debug\ProjectBase.Utils.pdb

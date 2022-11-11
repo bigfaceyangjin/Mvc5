@@ -1,0 +1,128 @@
+﻿@using ProjectBase.Utils
+@{
+    ViewBag.Title = "提单费用";
+}
+<style type="text/css">
+    .formod li span {
+        width: 100px;
+    }
+</style>
+<link href="~/libs/DataTables-1.10.6/media/css/jquery.dataTablesNew.css" rel="stylesheet" />
+<link href="~/libs/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" />
+<script src="~/libs/DataTables-1.10.6/media/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/DataTablesExt.js"></script>
+<script src="~/libs/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var table = $("#table_local").dataTable({
+            bProcessing: true,
+            scrollY: table_h1,
+            scrollCollapse: "true",
+            dom: 'tr<"bottom"lip><"clear">',
+            bServerSide: true,                    //指定从服务器端获取数据  
+            sServerMethod: "POST",
+            sAjaxSource: "@Url.Action("List", "BillOfLadingFee")",
+            fnServerParams: function (aoData) {  //查询条件
+                aoData.push(
+                    { name: "CusName", value: $("#CusName").val() },
+                    { name: "LoadBillNum", value: $("#LoadBillNum").val() },
+                    { name: "BillStatus", value: $("#BillStatus").val() },
+                    { name: "PayStatus", value: $("#PayStatus").val() },
+                    { name: "CompletionTimeFrom", value: $("#CompletionTimeFrom").val() },
+                    { name: "CompletionTimeTo", value: $("#CompletionTimeTo").val() });
+            },
+            columns: [
+                {
+                    "data": "ID", title: "<input type='checkbox' id='chkAllColl' onclick='selectAll()'/>", orderable: false, width: 60,
+                    "render": function (data, type, row, meta) {
+                        return "<input id='cbx" + data + "' type='checkbox' onclick='controlSelectAll(" + data + ")' class='cbx' value='" + data + "'/>  ";
+                    }
+                },
+                //{ data: "ID", title: "ID", visible: false },
+                { data: "CusName", title: "客户名称" },
+                { data: "LoadBillNum", title: "提单号" },
+                { data: "BillStatus", title: "提单状态", width: 100 },
+                { data: "CompletionTime", title: "清关完成时间", width: 180 },
+                { data: "OrderCounts", title: "包裹总数", width: 100 },
+                { data: "BillWeight", title: "提单重量(KG)", width: 100 },
+                { data: "LoadFee", title: "提货费", width: 100 },
+                { data: "StoreFee", title: "仓租", width: 100 },
+                { data: "TotalCollectFees", title: "运费总额", width: 100 },
+                { data: "TotalOperateFee", title: "操作费总额", width: 100 },
+                { data: "OtherFee", title: "其他费用", width: 100 },
+                {
+                    data: "TotalFee", title: "应收总额", width: 100, orderable: false, render: function (data, type, row, meta) { //自定义列
+                        return "<span class='wtps'>" + data + "</span>";
+                    }
+                },
+                { data: "PayStatus", title: "结算状态", width: 80 }
+            ],
+            paging: true,//分页
+            ordering: false,//是否启用排序
+            searching: true,//搜索
+            language: {
+                sProcessing: "处理中...",
+                lengthMenu: lengthMenuStr,//左上角的分页大小显示。
+                search: '<span class="label label-success">搜索：</span>',//右上角的搜索文本，可以写html标签
+
+                paginate: {//分页的样式内容。
+                    previous: "上一页",
+                    next: "下一页",
+                    first: "",
+                    last: ""
+                },
+
+                zeroRecords: "暂无记录",//table tbody内容为空时，tbody的内容。
+                //下面三者构成了总体的左下角的内容。
+                info: infoStr,//左下角的信息显示，大写的词为关键字。初始_MAX_ 条 
+                infoEmpty: "0条记录",//筛选为空时左下角的显示。
+                infoFiltered: ""//筛选之后的左下角筛选提示，
+            },
+            pagingType: "full_numbers"//分页样式的类型
+
+        });
+        //设置选中行样式
+        $('#table_local tbody').on('click', 'tr', function () {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+    //查询 刷新
+    function reloadList() {
+        var tables = $('#table_local').dataTable().api();//获取DataTables的Api，详见 http://www.datatables.net/reference/api/
+        tables.ajax.reload();
+    }
+</script>
+<div class="areabx clear">
+    @using (Html.BeginForm("List", null, FormMethod.Get, new { @clase = "form-inline", @role = "form" }))
+    {
+          <div id="divSearch">
+        @*<div class="areabx_header">@ViewBag.Title</div>*@
+        <ul class="formod">
+            <li><span>客户名称：</span>@Html.TextBox("CusName", "", new { @class = "trade-time wid153" })</li>
+            <li><span>提单号：</span>@Html.TextBox("LoadBillNum", "", new { @class = "trade-time" })</li>
+            <li><span>提单状态：</span>@Html.DropDownList("BillStatus", @Html.EnumToList(typeof(Core.BillStatusEnum), true), new { @class = "trade-time wid153" })</li>
+        </ul>
+        <ul class="formod">
+            <li><span>结算状态：</span>@Html.DropDownList("PayStatus", @Html.EnumToList(typeof(Core.PayStatus), true), new { @class = "trade-time wid153" })</li>
+            <li><span>清关完成时间：</span>@Html.TextBox("CompletionTimeFrom", "", new { @class = "trade-time wid153", @onClick = "WdatePicker({maxDate:'#F{$dp.$D(\\'CompletionTimeTo\\')}'})" })</li>
+            <li><span style="text-align: left; width: 25px; margin-left: -20px;">—</span>@Html.TextBox("CompletionTimeTo", "", new { @class = "trade-time wid153", @onClick = "WdatePicker({minDate:'#F{$dp.$D(\\'CompletionTimeFrom\\')}'})" })</li>
+        </ul>
+        <div class="botbtbx pdb0">
+            <input type="button" value="查询" onclick="reloadList();" class="btn btn-primary">
+            @*<input type="button" value="导出" class="btn btn-primary" />
+            <input type="button" value="预览结算单" class="btn btn-primary" />
+            <input type="button" value="生成结算单" class="btn btn-primary" />*@
+        </div>
+              </div>
+    }
+    <div class="tob_box mgt15">
+        <table id="table_local" class="display" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+        </table>
+    </div>
+</div>

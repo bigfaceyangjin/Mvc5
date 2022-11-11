@@ -1,0 +1,3 @@
+﻿----------------------header--------------------------
+2015-06-24 09:00:44,586 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“0e65cd34-f393-4972-8fce-79b52e944eb9”开始运行
+2015-06-24 09:00:49,227 INFO  BillWarehouseJobLog  - 任务名:“BillWarehouseJob”,唯一标识符:“0e65cd34-f393-4972-8fce-79b52e944eb9”运行完毕,共获取0条数据

@@ -1,0 +1,65 @@
+﻿@model Core.CostFlow.WayBillCost
+@using ProjectBase.Utils
+@Html.Raw(ViewBag.Msg)
+<style type="text/css">
+    html, body {
+        overflow:hidden;
+    }
+</style>
+<script src="~/libs/lhgdialog/lhgdialog.min.js?self=true"></script>
+<script type="text/javascript">
+    function closeWin() {
+        frameElement.api.opener.UpdateDG.close();
+    }
+    function refreshClose() {
+        closeWin();
+        frameElement.api.opener.reloadList();
+    }
+</script>
+<div class="areabx clear">
+    <div class="tian_xi">
+        @using (Html.BeginForm("WayBillExceptionUpdate", "Reconciliation", FormMethod.Post, new { @clase = "form-inline", @role = "form", name = "from1" }))
+        {
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+
+                    <tr style="height: 40px;">
+                        <td align="right">运单号：</td>
+                        @Html.Hidden("ExcID", (ViewBag.ExcID as object))
+                        @Html.Hidden("WayBillCostID", (ViewBag.ID as object))
+                        @*    @Html.HiddenFor(p => p.ID)*@
+                        <td>
+                            @Html.TextBoxFor(x => x.ExpressNo, new { @class = "trade-timen", @id = "cusName" })</td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">快递类型：</td>
+                        <td>
+                            @Html.DropDownListFor(x => x.Product, new List<SelectListItem>{
+                            new SelectListItem (){Text="国内进口商业快件物品限时递",Value="国内进口商业快件物品限时递"},
+                            new SelectListItem (){Text="国内进口商业快件物品经济时限",Value="国内进口商业快件物品经济时限"}
+                            })
+                        </td>
+                        @* @Html.DropDownListFor(x => x.Product, @Html.EnumToList(typeof(Core.Customer.Busssiness), false), new { @class = "trade-timen", style = "width:180px" })*@
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">运费：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.WayBillFee, new { @class = "trade-timen" })</td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td align="right">操作费：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.ProcessingFee, new { @class = "trade-timen", @id = "email" }) </td>
+                    </tr>
+                    @*    <tr style="height: 40px;">
+                        <td align="right">其他费用：</td>
+                        <td>
+                            @Html.TextBoxFor(x => x.Fax, new { @class = "trade-timen" })</td>
+                    </tr>              *@
+                </tbody>
+            </table>
+            <input type="submit" value="确定" class="popbtn1 mg">
+            <input type="button" value="关闭" class="popbtn3 mg2" onclick=" closeWin()" />
+        }
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿----------------------header--------------------------
+2015-06-24 09:00:48,524 ERROR BillWarehouseJobLog - 任务名:“BillWarehouseJob”,唯一标识符:“0e65cd34-f393-4972-8fce-79b52e944eb9”任务出现异常
+System.Exception: No current query in data reader
+   在 MySql.Data.MySqlClient.MySqlDataReader.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   在 MySql.Data.MySqlClient.MySqlDataReader.GetValues(Object[] values)
+   在 System.Data.ProviderBase.SchemaMapping.LoadDataRow()
+   在 System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataTable[] dataTables, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.DataTable.Load(IDataReader reader, LoadOption loadOption, FillErrorEventHandler errorHandler)
+   在 DBHelper.Entitys.LoadBillInfo.GetLoadBillInComeTable() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 209
+   在 DBHelper.Entitys.LoadBillInfo.SynBillInCome() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 221
+   在 B2CSynchro.Jobs.BillWarehouseJob.Execute(IJobExecutionContext context) 位置 e:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\Jobs\BillWarehouseJob.cs:行号 24

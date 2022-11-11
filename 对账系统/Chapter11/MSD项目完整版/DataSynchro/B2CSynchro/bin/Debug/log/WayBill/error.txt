@@ -1,0 +1,77 @@
+﻿2015-06-19 08:44:12,461 ERROR WayBillLog - 任务名:“WayBillJob”,唯一标识符:“23074dfe-f0f0-46fb-b157-3381a0873c9e”任务出现异常
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0 ]
+  Name:status - Value:0
+[SQL: select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0] ---> MySql.Data.MySqlClient.MySqlException: Invalid attempt to Read when reader is closed.
+   在 MySql.Data.MySqlClient.MySqlDataReader.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlDataReader.Read()
+   在 NHibernate.Driver.NHybridDataReader.Read()
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.AbstractSessionImpl.List[T](IQueryExpression query, QueryParameters parameters)
+   在 NHibernate.Impl.AbstractQueryImpl2.List[T]()
+   在 DBHelper.Entitys.LoadBillInfo.GetUnGetOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 102
+   在 DBHelper.Entitys.LoadBillInfo.SynchroOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 107
+   在 B2CSynchro.Jobs.WayBillJob.Execute(IJobExecutionContext context) 位置 e:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\Jobs\WayBillJob.cs:行号 23
+2015-06-23 09:07:23,399 ERROR WayBillLog - 任务名:“WayBillJob”,唯一标识符:“2182f475-798a-4660-aaa8-ffe8e88965fb”任务出现异常
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0 ]
+  Name:status - Value:0
+[SQL: select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0] ---> MySql.Data.MySqlClient.MySqlException: There is already an open DataReader associated with this Connection which must be closed first.
+   在 MySql.Data.MySqlClient.ExceptionInterceptor.Throw(Exception exception)
+   在 MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.AbstractSessionImpl.List[T](IQueryExpression query, QueryParameters parameters)
+   在 NHibernate.Impl.AbstractQueryImpl2.List[T]()
+   在 DBHelper.Entitys.LoadBillInfo.GetUnGetOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 102
+   在 DBHelper.Entitys.LoadBillInfo.SynchroOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 107
+   在 B2CSynchro.Jobs.WayBillJob.Execute(IJobExecutionContext context) 位置 e:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\Jobs\WayBillJob.cs:行号 23
+2015-06-24 09:00:48,586 ERROR WayBillLog - 任务名:“WayBillJob”,唯一标识符:“d89f90f3-0d3c-48a7-afec-f37cc56f89ae”任务出现异常
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0 ]
+  Name:status - Value:0
+[SQL: select loadbillin0_.ID as ID1_, loadbillin0_.DeliveryID as DeliveryID1_, loadbillin0_.CompanyId as CompanyId1_, loadbillin0_.CompletionTime as Completi4_1_, loadbillin0_.BusinessID as BusinessID1_, loadbillin0_.LoadBillNum as LoadBill6_1_, loadbillin0_.BillStatus as BillStatus1_, loadbillin0_.BillWeight as BillWeight1_, loadbillin0_.CustomerID as CustomerID1_, loadbillin0_.CreateTime as CreateTime1_, loadbillin0_.OrderCounts as OrderCo11_1_, loadbillin0_.LoadFee as LoadFee1_, loadbillin0_.StoreFee as StoreFee1_, loadbillin0_.TotalCollectFees as TotalCo14_1_, loadbillin0_.OtherFee as OtherFee1_, loadbillin0_.TotalReceivableFee as TotalRe16_1_, loadbillin0_.IsGet as IsGet1_ from LoadBillInCome loadbillin0_ where loadbillin0_.IsGet=?p0] ---> MySql.Data.MySqlClient.MySqlException: There is already an open DataReader associated with this Connection which must be closed first.
+   在 MySql.Data.MySqlClient.ExceptionInterceptor.Throw(Exception exception)
+   在 MySql.Data.MySqlClient.MySqlCommand.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.AbstractSessionImpl.List[T](IQueryExpression query, QueryParameters parameters)
+   在 NHibernate.Impl.AbstractQueryImpl2.List[T]()
+   在 DBHelper.Entitys.LoadBillInfo.GetUnGetOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 102
+   在 DBHelper.Entitys.LoadBillInfo.SynchroOrder() 位置 e:\WorkSpace\wms\MSD\DataSynchro\DBHelper\Entitys\LoadBillInfo.cs:行号 107
+   在 B2CSynchro.Jobs.WayBillJob.Execute(IJobExecutionContext context) 位置 e:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\Jobs\WayBillJob.cs:行号 23

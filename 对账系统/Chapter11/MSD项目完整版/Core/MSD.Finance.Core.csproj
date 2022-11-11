@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B29C53F0-BB16-4DB7-A7E8-D7E231C146B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>MSD.Finance.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataSynchro\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseData\Currency.cs" />
+    <Compile Include="BaseData\FeeItem.cs" />
+    <Compile Include="BaseData\Repositories\ICurrencyRepository.cs" />
+    <Compile Include="BaseData\Repositories\IFeeItemRepository.cs" />
+    <Compile Include="CommonEnum.cs" />
+    <Compile Include="CostFlow\IdentityCardDetail.cs" />
+    <Compile Include="CostFlow\Repositories\IIdentityCardDetailRepository.cs" />
+    <Compile Include="CostFlow\Repositories\IWayBillCostRepository.cs" />
+    <Compile Include="CostFlow\WayBillCost.cs" />
+    <Compile Include="Customer\CustomerInfo.cs" />
+    <Compile Include="Customer\Repositories\ICustomerInfoRepository.cs" />
+    <Compile Include="Customer\Repositories\IExpressCurInfoRepository.cs" />
+    <Compile Include="Excel\Base\BaseGenerateSheet.cs" />
+    <Compile Include="Excel\Base\ColumnsMapping.cs" />
+    <Compile Include="Excel\Base\GenerateExcel.cs" />
+    <Compile Include="Excel\Base\GenerateSheet.cs" />
+    <Compile Include="Excel\MonthPayOff\LoadBillSheet.cs" />
+    <Compile Include="Excel\MonthPayOff\MonthPayOffSheet.cs" />
+    <Compile Include="Excel\MonthPayOff\WayBillSummarySheet.cs" />
+    <Compile Include="ExceptionDir\DelExpressNoExceptionDetail.cs" />
+    <Compile Include="ExceptionDir\DelLoadBillCostEx.cs" />
+    <Compile Include="ExceptionDir\DelWayBillCostEx.cs" />
+    <Compile Include="ExceptionDir\Repositories\IDelExpressNoExceptionDetailRepository.cs" />
+    <Compile Include="ExceptionDir\Repositories\IDelLoadBillCostExRepository.cs" />
+    <Compile Include="ExceptionDir\Repositories\IDelWayBillCostExRepository.cs" />
+    <Compile Include="Filters\BillOfLadingFeeFilter.cs" />
+    <Compile Include="Filters\CurrencyFilter.cs" />
+    <Compile Include="Filters\CustomerFilter.cs" />
+    <Compile Include="Customer\ExpressCurInfo.cs" />
+    <Compile Include="Filters\ExpressCurInfoFilter.cs" />
+    <Compile Include="Filters\FeeItemFilter.cs" />
+    <Compile Include="Filters\IdentityCardDetailFilter.cs" />
+    <Compile Include="Filters\IWayBillCostFilter.cs" />
+    <Compile Include="Filters\LoadBillReconciliationFilter.cs" />
+    <Compile Include="Filters\MonthPayOffExportFilter.cs" />
+    <Compile Include="Filters\MonthPayOffFilter.cs" />
+    <Compile Include="Filters\TaxDetailFilter.cs" />
+    <Compile Include="Filters\UnusualLoadBillFilter.cs" />
+    <Compile Include="Filters\UserAccountFilter.cs" />
+    <Compile Include="Filters\WayBillExceptionFilter.cs" />
+    <Compile Include="Filters\WayBillInComeFilter.cs" />
+    <Compile Include="Filters\WayBillReconciliationFilter.cs" />
+    <Compile Include="Interface\IPersonCard.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receivable\LoadBillInCome.cs" />
+    <Compile Include="Receivable\MonthPayOff.cs" />
+    <Compile Include="Receivable\MonthPayOffDetail.cs" />
+    <Compile Include="Receivable\Repositories\ILoadBillInComeRepository.cs" />
+    <Compile Include="Receivable\Repositories\IMonthPayOffDetailRepository.cs" />
+    <Compile Include="Receivable\Repositories\IMonthPayOffRepository.cs" />
+    <Compile Include="Receivable\Repositories\ITaxDetailRepository.cs" />
+    <Compile Include="Receivable\Repositories\IWayBillInComeRepository.cs" />
+    <Compile Include="Receivable\TaxDetail.cs" />
+    <Compile Include="Receivable\WayBillInCome.cs" />
+    <Compile Include="Reconciliation\LoadBillReconciliation.cs" />
+    <Compile Include="Reconciliation\Repositories\ILoadBillReconciliationRepository.cs" />
+    <Compile Include="Reconciliation\Repositories\IUnusualLoadBillRepository.cs" />
+    <Compile Include="Reconciliation\Repositories\IWayBillExceptionRepository.cs" />
+    <Compile Include="Reconciliation\Repositories\IWayBillReconciliationRepository.cs" />
+    <Compile Include="Reconciliation\UnusualLoadBill.cs" />
+    <Compile Include="Reconciliation\WayBillException.cs" />
+    <Compile Include="Reconciliation\WayBillReconciliation.cs" />
+    <Compile Include="UserModule\Repositories\IUserAccountRepository.cs" />
+    <Compile Include="UserModule\UserAccount.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBase.Data\ProjectBase.Data.csproj">
+      <Project>{fca0b98b-1e30-4dc5-b40c-324fe5db92ed}</Project>
+      <Name>ProjectBase.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectBase.Utils\ProjectBase.Utils.csproj">
+      <Project>{d6323fc4-e9ac-41a2-9b58-ff40fb5300cf}</Project>
+      <Name>ProjectBase.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

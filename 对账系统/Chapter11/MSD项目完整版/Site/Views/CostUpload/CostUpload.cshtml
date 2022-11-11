@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "CostUpload";
+}
+<link href="~/libs/uploadify/uploadify.css" rel="stylesheet" />
+<script src="~/libs/lhgdialog/lhgdialog.min.js?self=true"></script>
+<script src="~/libs/uploadify/jquery.uploadify-3.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //运单
+        $("#file_Orderupload").uploadify({
+            //指定swf文件
+            'swf': '@Url.Content("~/libs/uploadify/uploadify.swf")',
+            //后台处理的页面
+            'uploader': '/CostUpload/OrderCostUpload',
+            //按钮显示的文字
+            'buttonText': '浏 览...',
+            //显示的高度和宽度，默认 height 30；width 120
+            //'height': 15,
+            //'width': 80,
+            //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+            //在浏览窗口底部的文件类型下拉菜单中显示的文本
+            'fileTypeDesc': 'All Files',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.xls;*.xlsx',
+            //发送给后台的其他参数通过formData指定
+            //'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+            //上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+            //'queueID': 'fileQueue',
+            //选择文件后自动上传
+            'auto': false,
+            //设置为true将允许多文件上传
+            'multi': true,
+            'onUploadSuccess': function (file, data, response) {
+                var a = jQuery.parseJSON(data);
+                if (a.Success) {
+                    $.dialog.alert(a.Message);
+                }
+                else {
+                    $.dialog.alert("导入运单成本费用异常：" + a.Message);
+                }
+            }
+        });
+        //提单
+        $("#file_Billupload").uploadify({
+            //指定swf文件
+            'swf': '@Url.Content("~/libs/uploadify/uploadify.swf")',
+            //后台处理的页面
+            'uploader': '/CostUpload/BillCostUpload',
+            //按钮显示的文字
+            'buttonText': '浏 览...',
+            //显示的高度和宽度，默认 height 30；width 120
+            //'height': 15,
+            //'width': 80,
+            //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+            //在浏览窗口底部的文件类型下拉菜单中显示的文本
+            'fileTypeDesc': 'All Files',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.xls;*.xlsx',
+            //发送给后台的其他参数通过formData指定
+            //'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+            //上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+            //'queueID': 'fileQueue',
+            //选择文件后自动上传
+            'auto': false,
+            //设置为true将允许多文件上传
+            'multi': true,
+              'onUploadSuccess': function (file, data, response) {
+                  var a = jQuery.parseJSON(data);
+                  if (a.Success) {
+                      $.dialog.alert(a.Message);
+                  }
+                  else {
+                      $.dialog.alert("导入提单成本费用异常：" + a.Message);
+                  }
+              }
+        });
+
+        //身份证验证成本
+        $("#file_IDEupload").uploadify({
+            //指定swf文件
+            'swf': '@Url.Content("~/libs/uploadify/uploadify.swf")',
+            //后台处理的页面
+            'uploader': '/CostUpload/IDECostUpload',
+            //按钮显示的文字
+            'buttonText': '浏 览...',
+            //显示的高度和宽度，默认 height 30；width 120
+            //'height': 15,
+            //'width': 80,
+            //上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+            //在浏览窗口底部的文件类型下拉菜单中显示的文本
+            'fileTypeDesc': 'All Files',
+            //允许上传的文件后缀
+            'fileTypeExts': '*.xls;*.xlsx',
+            //发送给后台的其他参数通过formData指定
+            //'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+            //上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+            //'queueID': 'fileQueue',
+            //选择文件后自动上传
+            'auto': false,
+            //设置为true将允许多文件上传
+            'multi': true,
+            'onUploadSuccess': function (file, data, response) {          
+                var a = jQuery.parseJSON(data);
+                if (a.Success) {
+                    $.dialog.alert(a.Message);
+                }
+                else {
+                    $.dialog.alert("导入身份证验证成本费用异常：" + a.Message);
+                }
+            }
+        });
+    });
+    //运单成本导入
+    function uploadExpressCost() {
+        $('#file_Orderupload').uploadify('upload', '*');
+    }
+    //提单成本导入
+    function uploadBillCost() {
+        $('#file_Billupload').uploadify('upload', '*');
+    }
+    //提单成本导入
+    function uploadIDECost() {    
+        $('#file_IDEupload').uploadify('upload', '*');      
+    }
+</script>
+<div class="areabx clear"> 
+    <div class="areabx_header">运单成本导入   <span class="uploadSpan"><a  href="~/Uploads/20150101_运单成本模板.xls">下载运单成本模板</a></span><span class="uploadSpanInfo">说明：文件名称请以账单的年月命名，例如：2015年5月份的账单，文件名为“20150501”。工作簿名称为运单成本，模版列名和顺序不能修改。</span></div>
+</div>
+<div style="margin-top: 10px;">
+    @*用来作为文件队列区域*@
+    <div id="fileQueueOrder"></div>
+    <input type="file" id="file_Orderupload" name="file_Orderupload" />
+ <input type="button" class="popbtn1 mg4"  onclick="uploadExpressCost();"  value="上传文件"/>
+    <div>提示：成本上传后，24小时可查到提单对账单、运单对账单</div>
+</div>
+
+<br />
+<br />
+<div class="areabx clear">
+    <div class="areabx_header">提单成本导入   <span class="uploadSpan"><a  href="~/Uploads/20150101_提单成本模板.xls">下载提单成本模板</a></span><span class="uploadSpanInfo">说明：文件名称请以账单的年月命名，例如：2015年5月份的账单，文件名为“20150501”。工作簿名称为提单成本，模版列名和顺序不能修改。</span></div>
+</div>
+<div style="margin-top: 10px;">
+    @*用来作为文件队列区域*@
+    <div id="fileQueueBill"></div>
+    <input type="file" id="file_Billupload" name="file_Billupload" />
+    <input type="button" class="popbtn1 mg4"  onclick="uploadBillCost();"  value="上传文件"/>
+     <div>提示：成本上传后，24小时可查到提单对账单、运单对账单</div>
+</div>
+
+<br />
+<br />
+<div class="areabx clear">
+    <div class="areabx_header">身份证验证成本导入   <span class="uploadSpan"><a  href="~/Uploads/20150101_身份证验证成本模板.xlsx">下载身份证验证成本模板</a></span><span class="uploadSpanInfo">说明：文件名称请以账单的年月命名，例如：2015年5月份的账单，文件名为“20150501”。工作簿名称为身份证验证成本，模版列名和顺序不能修改。</span></div>
+</div>
+<div style="margin-top: 10px;">
+    @*用来作为文件队列区域*@
+    <div id="fileQueueIDE"></div>
+    <input type="file" id="file_IDEupload" name="file_IDEupload" />
+    <input type="button" class="popbtn1 mg4"  onclick="uploadIDECost();"  value="上传文件"/>
+     <div>提示：成本上传后，24小时可查到提单对账单、运单对账单</div>
+</div>

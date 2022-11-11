@@ -1,0 +1,12 @@
+﻿----------------------header--------------------------
+2015-06-17 08:50:10,039 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“16701e3d-3a31-4b67-a868-980048471511”开始运行
+2015-06-17 08:50:10,071 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“16701e3d-3a31-4b67-a868-980048471511”运行完毕,共获取0条数据
+2015-06-17 09:00:00,000 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“91340616-3e0b-4cf9-a2e9-b5eac5113290”开始运行
+2015-06-17 09:00:00,026 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“91340616-3e0b-4cf9-a2e9-b5eac5113290”运行完毕,共获取0条数据
+2015-06-17 12:00:00,471 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“ba135c92-c1b5-4b05-a910-87a2def8d55d”开始运行
+2015-06-17 12:00:00,747 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“ba135c92-c1b5-4b05-a910-87a2def8d55d”运行完毕,共获取0条数据
+2015-06-17 15:00:00,174 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“09c5c8ed-981c-4b20-be7f-579acde64e21”开始运行
+2015-06-17 15:00:00,645 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“09c5c8ed-981c-4b20-be7f-579acde64e21”运行完毕,共获取0条数据
+2015-06-17 18:00:00,307 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“a883d7d4-7799-415b-9763-90f36c123599”开始运行
+2015-06-17 18:00:00,499 INFO  OrderCostLog  - 任务名:“OrderCostJob”,唯一标识符:“a883d7d4-7799-415b-9763-90f36c123599”运行完毕,共获取0条数据
+----------------------footer--------------------------

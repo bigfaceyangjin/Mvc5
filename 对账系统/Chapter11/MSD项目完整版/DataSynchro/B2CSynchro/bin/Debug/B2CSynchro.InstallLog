@@ -1,0 +1,20 @@
+﻿正在安装程序集“E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe”。
+受影响的参数是:
+   assemblypath = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe
+   logfile = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.InstallLog
+正在安装服务 B2CSynchro...
+正在日志 Application 中创建 EventLog 源 B2CSynchro...
+正在安装程序集“E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe”。
+受影响的参数是:
+   assemblypath = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe
+   logfile = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.InstallLog
+正在安装服务 B2CSynchro...
+已成功安装服务 B2CSynchro。
+正在日志 Application 中创建 EventLog 源 B2CSynchro...
+查看日志文件的内容以获得 E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe 程序集的进度。
+该文件位于 E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.InstallLog。
+正在提交程序集“E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.exe
+   logfile = E:\WorkSpace\wms\MSD\DataSynchro\B2CSynchro\bin\Debug\B2CSynchro.InstallLog

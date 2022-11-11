@@ -1,0 +1,310 @@
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-24 11:25:44,600 [11] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select COUNT(b.ID) as Count FROM WayBillInCome b LEFT JOIN WayBillCost a  ON a.ExpressNo=b.ExpressNo
+LEFT JOIN ExpressNoExceptionDetail e ON a.ID=e.WayBillCostID
+LEFT JOIN CustomerInfo c ON b.CustomerID=c.ID 
+INNER JOIN LoadBillInCome d ON b.LoadBillID=d.ID where 1=1 AND e.ID is NULL
+MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.TimeoutException: Timeout in IO operation
+   在 MySql.Data.MySqlClient.TimedStream.StopTimer()
+   在 MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.ExceptionInterceptor.Throw(Exception exception)
+   在 MySql.Data.MySqlClient.MySqlConnection.Throw(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlConnection.HandleTimeoutOrThreadAbort(Exception ex)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 11:25:44,610 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-24 11:25:44,610 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation
+2015-06-24 11:25:44,611 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-24 11:25:44,611 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation
+2015-06-24 11:25:44,612 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2015-06-24 11:25:44,612 [11] ERROR NHibernate.Util.ADOExceptionReporter - Timeout in IO operation
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-24 13:35:08,758 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+e.ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By  desc ORDER BY ExpressNo limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc ORDER BY ExpressNo limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 13:35:08,793 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:35:08,794 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:35:08,794 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc ORDER BY ExpressNo limit 50' at line 19
+----------------------header--------------------------
+2015-06-24 13:36:20,067 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+e.ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By PostingTime desc ORDER BY ExpressNo limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 13:36:20,127 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:36:20,176 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:36:20,177 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:36:39,927 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+e.ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By PostingTime desc ORDER BY ExpressNo limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 13:36:39,984 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:36:40,031 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:36:40,031 [9] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-24 13:37:48,202 [7] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+e.ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By  PostingTime desc ORDER BY ExpressNo limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 13:37:48,277 [7] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:37:48,327 [7] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+2015-06-24 13:37:48,327 [7] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY ExpressNo limit 50' at line 19
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+2015-06-24 18:50:16,953 [39] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT e.ID AS ID,
+w.ID AS IsInputCost,
+w.PostingTime AS PostingTime, 
+e.ExpressNo AS ExpressNo,  
+e.LoadBillNO AS LoadBillNum, 
+w.Weight AS Weight,       
+c.Cus_Name AS CusName,		 
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreExpressFee ELSE w.WayBillFee END) AS WayBillFee,  
+(CASE WHEN w.ExpressNo IS NULL THEN a.PreOperateFee ELSE w.ProcessingFee END) AS ProcessingFee,
+a.ExpressFee AS ExpressFee,  
+a.OperateFee AS OperateFee, 
+w.PayStatus AS CostStatus,    
+a.PayStatus AS InComeStatus,  
+a.ExpressFee - w.WayBillFee AS WayBillProfit,
+e.ExceptionMsg,e.WayBillCostID   FROM ExpressNoExceptionDetail e
+INNER JOIN WayBillCost w ON e.WayBillCostID = w.ID AND e.Status=0
+LEFT JOIN WayBillInCome a  ON e.ExpressNo = a.ExpressNo
+LEFT JOIN CustomerInfo c ON a.CustomerID = c.ID 
+where 1=1  Order By   asc limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc limit 50' at line 19
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 18:50:17,133 [39] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc limit 50' at line 19
+2015-06-24 18:50:17,135 [39] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc limit 50' at line 19
+2015-06-24 18:50:17,135 [39] ERROR NHibernate.Util.ADOExceptionReporter - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc limit 50' at line 19
+----------------------header--------------------------
+2015-06-24 19:00:13,680 [9] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+2015-06-24 19:00:13,724 [9] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+2015-06-24 19:00:13,725 [9] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+2015-06-24 19:00:40,370 [10] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+2015-06-24 19:00:40,408 [10] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+2015-06-24 19:00:40,408 [10] ERROR NHibernate.Util.ADOExceptionReporter - 指定的转换无效。
+----------------------header--------------------------
+2015-06-24 19:10:15,108 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select count(*) as col_0_0_ from LoadBillInCome loadbillin0_ where 1=1 and Cus_Name=?p0 and loadbillin0_.CompletionTime>=?p1 and loadbillin0_.CompletionTime<=?p2
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'Cus_Name' in 'where clause'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 19:10:15,117 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+2015-06-24 19:10:15,117 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+2015-06-24 19:10:15,118 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+----------------------header--------------------------
+2015-06-24 19:10:53,699 [10] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select count(*) as col_0_0_ from LoadBillInCome loadbillin0_ where 1=1 and Cus_Name=?p0 and loadbillin0_.CompletionTime>=?p1 and loadbillin0_.CompletionTime<=?p2
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'Cus_Name' in 'where clause'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 19:10:53,744 [10] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+2015-06-24 19:10:53,778 [10] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+2015-06-24 19:10:53,779 [10] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'Cus_Name' in 'where clause'
+----------------------header--------------------------
+2015-06-24 19:12:34,881 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select count(*) as col_0_0_ from LoadBillInCome loadbillin0_ where 1=1 and CusName=?p0 and loadbillin0_.CompletionTime>=?p1 and loadbillin0_.CompletionTime<=?p2
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CusName' in 'where clause'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 19:12:34,960 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+2015-06-24 19:12:35,022 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+2015-06-24 19:12:35,023 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+2015-06-24 19:12:43,346 [9] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select count(*) as col_0_0_ from LoadBillInCome loadbillin0_ where 1=1 and CusName=?p0 and loadbillin0_.CompletionTime>=?p1 and loadbillin0_.CompletionTime<=?p2
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'CusName' in 'where clause'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2015-06-24 19:12:43,414 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+2015-06-24 19:12:43,465 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+2015-06-24 19:12:43,465 [9] ERROR NHibernate.Util.ADOExceptionReporter - Unknown column 'CusName' in 'where clause'
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
+----------------------header--------------------------
+----------------------footer--------------------------
